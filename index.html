@@ -1,0 +1,1180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<title>iWriteHub — Layers of SEO: SEO, AEO, GEO, AIO & SXO Guides and Toolkit</title>
+<meta name="description" content="iWriteHub is a free search and content architecture library: 20 in-depth, long-form guides on SEO, AEO, GEO, AIO and SXO, plus a free browser-based SEO toolkit with a SERP title and direct-answer readiness checker." />
+<meta name="keywords" content="SEO guides, technical SEO, AEO, answer engine optimization, GEO, generative engine optimization, AIO, SXO, SEO toolkit, SERP title checker" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="iWriteHub" />
+<link rel="canonical" href="https://iwritehub.github.io/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="iWriteHub" />
+<meta property="og:title" content="iWriteHub — Layers of SEO: From Crawled to Converted" />
+<meta property="og:description" content="Twenty in-depth engineering guides, structured reference tables, and free browser-based diagnostic tools connecting classical technical SEO with Answer Engine, Generative, AI, and Search Experience optimization." />
+<meta property="og:url" content="https://iwritehub.github.io/" />
+<meta property="og:image" content="https://iwritehub.github.io/assets/img-analytics.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="iWriteHub — Layers of SEO" />
+<meta name="twitter:description" content="Free long-form guides and tools for SEO, AEO, GEO, AIO and SXO. Learn how pages get crawled, answered, cited and converted." />
+<meta name="twitter:image" content="https://iwritehub.github.io/assets/img-analytics.jpg" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b6e5d'/%3E%3Cpath d='M9 23c4-1 5-3 6-7l6-7c.6-.7 1.7-.2 1.7.7L21 17c-1 4-3 6-7 6H9z' fill='%23dff3c9'/%3E%3C/svg%3E" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "iWriteHub",
+  "url": "https://iwritehub.github.io/",
+  "description": "A free library of long-form guides and browser-based tools covering SEO, AEO, GEO, AIO and SXO.",
+  "inLanguage": "en",
+  "publisher": { "@type": "Organization", "name": "iWriteHub", "url": "https://iwritehub.github.io/" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is the difference between SEO, AEO, GEO, AIO and SXO?","acceptedAnswer":{"@type":"Answer","text":"SEO gets a page crawled, indexed and ranked in classic search results. AEO shapes content so it becomes the direct answer in featured snippets and AI Overviews. GEO earns citations inside AI-generated answers from tools like ChatGPT and Gemini. AIO makes content machine-readable through clean structure, entities and structured data. SXO improves the experience after the click so visitors convert."}},
+    {"@type":"Question","name":"Are the iWriteHub tools free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every tool on iWriteHub runs entirely in your browser, is free to use, and does not upload your text anywhere."}},
+    {"@type":"Question","name":"How long are the iWriteHub guides?","acceptedAnswer":{"@type":"Answer","text":"Each guide is a full long-form article, typically 1,000 to 1,600 words, with step-by-step workflows, tables, checklists and examples."}},
+    {"@type":"Question","name":"Do I need coding skills to use these guides?","acceptedAnswer":{"@type":"Answer","text":"No. The guides are written for site owners, bloggers and marketers. Technical steps are explained in plain language, and any code shown is copy-ready."}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#f6f9f6; --surface:#ffffff; --surface2:#eef4e6; --ink:#132a20; --muted:#57705f;
+  --brand:#0b6e5d; --brand-deep:#084c40; --accent:#7ba428; --accent-soft:#e7f0d2;
+  --line:#dce7dc; --line2:#e8efe4; --chip:#eef4e6; --warn:#b3541e; --bad:#b3261e; --good:#2e7d32;
+  --shadow:0 10px 30px rgba(16,52,38,.08); --radius:18px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0c1410; --surface:#131e17; --surface2:#1a2a1e; --ink:#e4efe6; --muted:#9db4a4;
+    --brand:#35b294; --brand-deep:#7fd6bf; --accent:#a9cc54; --accent-soft:#22351c;
+    --line:#26382c; --line2:#223128; --chip:#1a2a1e; --warn:#e59a63; --bad:#ef8a80; --good:#8fce92;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+button,[role="button"],select,summary,input,textarea{font-family:inherit}
+button,[role="button"],select,summary,input:not([type="checkbox"]){min-height:2.25rem}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Sora",sans-serif;line-height:1.15;margin:0}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+/* Header */
+header.site{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header-in{display:flex;align-items:center;gap:18px;max-width:1180px;margin:0 auto;padding:10px 20px}
+.logo{display:flex;align-items:center;gap:9px;font-family:"Sora",sans-serif;font-weight:800;font-size:1.32rem;color:var(--ink);letter-spacing:-.02em}
+.logo:hover{text-decoration:none}
+.logo svg{flex:none}
+.logo .hub{color:var(--brand)}
+nav.main{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+nav.main a{color:var(--ink);font-weight:600;font-size:.95rem;padding:9px 11px;border-radius:10px}
+nav.main a:hover{background:var(--chip);text-decoration:none}
+nav.main a.active{color:var(--brand)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--brand);color:#fff;font-weight:700;border:0;border-radius:12px;padding:12px 20px;cursor:pointer;font-size:.98rem;min-height:44px}
+.btn:hover{background:var(--brand-deep);text-decoration:none}
+.btn.ghost{background:var(--surface);color:var(--brand);border:1.5px solid var(--brand)}
+.btn.ghost:hover{background:var(--chip)}
+.btn.small{padding:9px 15px;min-height:40px;font-size:.9rem}
+.menu-btn{display:none;margin-left:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;width:44px;height:44px;cursor:pointer;align-items:center;justify-content:center}
+@media (max-width:900px){
+  nav.main{display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--line);flex-direction:column;padding:10px 16px 16px;box-shadow:var(--shadow)}
+  nav.main.open{display:flex}
+  nav.main a{padding:12px 10px}
+  .menu-btn{display:inline-flex}
+  .header-cta{display:none}
+}
+
+/* Hero */
+.hero{text-align:center;padding:56px 0 30px}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brand);font-weight:600}
+.kicker::before{content:"●";color:var(--accent);margin-right:8px;font-size:.6rem;vertical-align:2px}
+.hero h1{font-size:clamp(2.6rem,7vw,4.4rem);font-weight:800;letter-spacing:-.03em;margin:14px 0 6px}
+.hero h1 .accent{color:var(--accent)}
+.hero .tagline{font-family:"IBM Plex Mono",monospace;letter-spacing:.34em;font-size:.8rem;color:var(--muted);text-transform:uppercase}
+.hero p.lede{max-width:660px;margin:22px auto 0;color:var(--muted);font-size:1.08rem}
+.hero-cta{display:flex;gap:14px;justify-content:center;margin-top:28px;flex-wrap:wrap}
+.hero-stats{display:flex;gap:26px;justify-content:center;margin-top:30px;flex-wrap:wrap;color:var(--muted);font-size:.92rem}
+.hero-stats b{color:var(--ink);font-family:"Sora",sans-serif}
+
+/* Pillar rows */
+.pillars{display:grid;gap:18px;margin:26px 0 8px}
+.pillar{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:grid;grid-template-columns:250px 1fr 1fr 230px;gap:22px;box-shadow:var(--shadow)}
+.pillar .p-head{display:flex;gap:14px}
+.p-icon{width:58px;height:58px;flex:none;border-radius:50%;background:radial-gradient(circle at 32% 30%,#3fae97,var(--brand));display:flex;align-items:center;justify-content:center;color:#fff}
+.p-icon svg{width:28px;height:28px}
+.pillar h3{font-size:1.9rem;letter-spacing:-.02em}
+.pillar .p-full{color:var(--muted);font-size:.92rem;margin-top:2px}
+.p-goal{margin-top:14px}
+.p-goal .g-label{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:800}
+.p-goal .g-text{font-weight:700;font-size:.95rem}
+.p-col h4{margin:0 0 8px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-family:"Manrope",sans-serif}
+.p-col ul{margin:0;padding:0;list-style:none}
+.p-col li{padding:2.5px 0;color:var(--ink);font-size:.95rem}
+.p-col li::before{content:"•";color:var(--accent);margin-right:8px;font-weight:800}
+.p-metric{background:var(--surface2);border-radius:14px;padding:16px;display:flex;flex-direction:column}
+.p-metric .m-head{background:var(--brand);color:#fff;text-align:center;font-weight:700;font-size:.85rem;border-radius:8px;padding:7px 6px;margin:-4px -4px 12px}
+.p-metric ul{margin:0;padding:0;list-style:none}
+.p-metric li{padding:4px 0;font-size:.93rem;display:flex;gap:8px;align-items:center}
+.p-metric li svg{flex:none;color:var(--brand)}
+.p-metric a{margin-top:auto;padding-top:12px;font-weight:700;font-size:.9rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);color:var(--ink)}
+.p-metric a:hover{color:var(--brand);text-decoration:none}
+@media (max-width:1020px){.pillar{grid-template-columns:1fr 1fr}.p-metric{grid-column:span 2}}
+@media (max-width:620px){.pillar{grid-template-columns:1fr}.p-metric{grid-column:auto}}
+
+/* Tool panels */
+.tool{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);margin:34px 0}
+.tool .t-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap}
+.tool h2{font-size:1.55rem;letter-spacing:-.01em}
+.tool .t-sub{color:var(--muted);margin-top:6px;max-width:640px}
+.tool-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:22px;margin-top:22px}
+@media (max-width:820px){.tool-grid{grid-template-columns:1fr}}
+.field label{display:block;font-weight:700;font-size:.9rem;margin:0 0 7px}
+.field label span{color:var(--muted);font-weight:500}
+.field input[type="text"],.field textarea{width:100%;border:1.5px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);padding:12px 14px;font-size:1rem}
+.field textarea{min-height:110px;resize:vertical;line-height:1.55}
+.field input:focus,.field textarea:focus{outline:2px solid var(--brand);outline-offset:1px;border-color:var(--brand)}
+.field{margin-bottom:18px}
+.result-stack{display:grid;gap:14px}
+.result-box{border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--bg)}
+.result-box .r-label{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.result-box .r-value{font-family:"Sora",sans-serif;font-size:1.5rem;font-weight:700;margin-top:4px}
+.pill{display:inline-block;margin-top:7px;font-size:.8rem;font-weight:700;padding:4px 11px;border-radius:999px;background:var(--accent-soft);color:var(--good)}
+.pill.warn{background:#f7e8d8;color:var(--warn)}
+.pill.bad{background:#f9dcd9;color:var(--bad)}
+@media (prefers-color-scheme: dark){.pill.warn{background:#3d2a18}.pill.bad{background:#3d1d1a}}
+
+/* Sections & cards */
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;margin:44px 0 18px;border-bottom:2px solid var(--line2);padding-bottom:12px;flex-wrap:wrap}
+.section-head .kicker{font-size:.72rem}
+.section-head h2{font-size:1.65rem;margin-top:5px}
+.section-head a{font-weight:700;font-size:.92rem;white-space:nowrap}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:980px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.cards{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);cursor:pointer;transition:transform .15s ease}
+.card:hover{transform:translateY(-3px)}
+.card img{width:100%;height:172px;object-fit:cover}
+.card .c-body{padding:18px;display:flex;flex-direction:column;flex:1}
+.card .c-meta{display:flex;justify-content:space-between;align-items:center;font-size:.78rem;color:var(--muted)}
+.card .c-cat{font-family:"IBM Plex Mono",monospace;font-weight:600;letter-spacing:.12em;color:var(--brand);text-transform:uppercase}
+.card h3{font-size:1.16rem;margin:10px 0 8px;line-height:1.3}
+.card p{color:var(--muted);font-size:.93rem;margin:0;flex:1}
+.card .c-link{margin-top:14px;font-weight:700;font-size:.9rem;color:var(--brand)}
+.card .c-time{font-size:.8rem;color:var(--muted)}
+
+/* Views */
+.view{display:none}
+.view.active{display:block}
+.page-head{padding:44px 0 8px}
+.page-head h1{font-size:clamp(1.9rem,5vw,2.7rem);letter-spacing:-.02em;margin-top:10px}
+.page-head p{color:var(--muted);max-width:680px}
+.chips{display:flex;gap:9px;flex-wrap:wrap;margin:20px 0 6px}
+.chip{border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:9px 17px;font-weight:700;cursor:pointer;font-size:.9rem;min-height:40px}
+.chip.on{background:var(--brand);border-color:var(--brand);color:#fff}
+
+/* Article */
+.article-hero{margin:26px 0 0;border-radius:var(--radius);overflow:hidden}
+.article-hero img{width:100%;max-height:420px;object-fit:cover}
+.article-wrap{max-width:780px;margin:0 auto}
+.article-meta{display:flex;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:.9rem;margin:18px 0 4px;align-items:center}
+.article-body{font-size:1.06rem}
+.article-body h2{font-size:1.55rem;margin:38px 0 12px;letter-spacing:-.01em}
+.article-body h3{font-size:1.22rem;margin:28px 0 9px}
+.article-body p{margin:0 0 16px}
+.article-body ul,.article-body ol{margin:0 0 18px;padding-left:24px}
+.article-body li{margin-bottom:7px}
+.article-body table{width:100%;border-collapse:collapse;margin:6px 0 22px;font-size:.96rem;display:block;overflow-x:auto}
+.article-body th,.article-body td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+.article-body th{background:var(--chip);font-family:"Sora",sans-serif;font-size:.9rem}
+.callout{background:var(--surface2);border-radius:14px;padding:18px 20px;margin:22px 0}
+.callout b.t{display:block;font-family:"Sora",sans-serif;margin-bottom:5px}
+.callout p{margin:0}
+.answer-box{border:1.5px dashed var(--brand);border-radius:14px;padding:18px 20px;margin:22px 0;background:var(--surface)}
+.answer-box .a-label{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);font-weight:600}
+.answer-box p{margin:6px 0 0;font-size:1.05rem}
+.checklist{list-style:none;padding:0}
+.checklist li{padding-left:30px;position:relative}
+.checklist li::before{content:"✓";position:absolute;left:0;top:0;color:var(--brand);font-weight:800}
+.related{margin:50px 0 10px}
+.back-link{display:inline-flex;align-items:center;gap:7px;font-weight:700;margin-top:26px;min-height:40px}
+
+/* FAQ */
+details.faq{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;padding:4px 20px}
+details.faq summary{cursor:pointer;font-weight:700;font-family:"Sora",sans-serif;font-size:1.02rem;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"+";color:var(--brand);font-size:1.4rem;font-weight:400}
+details.faq[open ] summary::after{content:"–"}
+details.faq p{color:var(--muted);margin:0 0 16px}
+
+/* Static pages */
+.prose{max-width:780px}
+.prose h2{font-size:1.4rem;margin:32px 0 10px}
+.prose p,.prose li{color:var(--ink)}
+.prose p{margin:0 0 15px}
+.prose ul{padding-left:22px;margin:0 0 16px}
+.contact-form{max-width:560px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+.form-note{font-size:.88rem;color:var(--muted);margin-top:12px}
+
+/* Footer */
+footer.site{margin-top:70px;border-top:1px solid var(--line);background:var(--surface)}
+.footer-in{max-width:1120px;margin:0 auto;padding:38px 20px 26px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+@media (max-width:820px){.footer-in{grid-template-columns:1fr 1fr}}
+footer.site h4{font-family:"Sora",sans-serif;margin:0 0 12px;font-size:.98rem}
+footer.site a{color:var(--muted);display:block;padding:4px 0;font-size:.94rem}
+footer.site a:hover{color:var(--brand)}
+footer.site p{color:var(--muted);font-size:.94rem;margin:8px 0 0;max-width:300px}
+.footer-base{border-top:1px solid var(--line2);padding:16px 20px;text-align:center;color:var(--muted);font-size:.87rem;max-width:1120px;margin:0 auto}
+
+/* Cookie bar */
+.cookie{position:fixed;left:16px;right:16px;bottom:16px;z-index:80;max-width:1060px;margin:0 auto;background:var(--brand-deep);color:#eaf5ee;border-radius:16px;padding:18px 22px;display:none;gap:18px;align-items:center;box-shadow:0 18px 40px rgba(0,0,0,.3);flex-wrap:wrap}
+@media (prefers-color-scheme: dark){.cookie{background:#173528}}
+.cookie.show{display:flex}
+.cookie p{margin:0;flex:1;min-width:240px;font-size:.94rem}
+.cookie a{color:#bfe3a8;text-decoration:underline}
+.cookie .btn{background:var(--accent);color:#12240a}
+.cookie .btn.ghost2{background:transparent;color:#eaf5ee;border:1.5px solid #eaf5ee}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ink);color:var(--bg);padding:12px 22px;border-radius:999px;font-weight:700;font-size:.92rem;z-index:90;transition:transform .25s ease;opacity:0}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="header-in">
+    <a class="logo" href="#home" data-nav="home" aria-label="iWriteHub home">
+      <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0b6e5d"/><path d="M9 23c4-1 5-3 6-7l6-7c.6-.7 1.7-.2 1.7.7L21 17c-1 4-3 6-7 6H9z" fill="#dff3c9"/></svg>
+      iWrite<span class="hub" style="margin-left:-9px">Hub</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="main" id="mainNav" aria-label="Main navigation">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#guides" data-nav="guides">All Guides</a>
+      <a href="#toolkit" data-nav="toolkit">SEO Toolkit</a>
+      <a href="#category/seo" data-nav="cat-seo">SEO</a>
+      <a href="#category/aeo" data-nav="cat-aeo">AEO</a>
+      <a href="#category/geo" data-nav="cat-geo">GEO</a>
+      <a href="#category/aio" data-nav="cat-aio">AIO</a>
+      <a href="#category/sxo" data-nav="cat-sxo">SXO</a>
+      <a href="#about" data-nav="about">About</a>
+    </nav>
+    <a class="btn small header-cta" href="#toolkit" data-nav="toolkit">SEO Toolkit ↗</a>
+  </div>
+</header>
+
+<main>
+<!-- ================= HOME ================= -->
+<section class="view" id="view-home">
+  <div class="wrap">
+    <div class="hero">
+      <div class="kicker">Technical Search &amp; Content Architecture Library</div>
+      <h1>Layers of <span class="accent">SEO</span></h1>
+      <div class="tagline">From Crawled to Converted</div>
+      <p class="lede">Twenty in-depth, long-form guides, structured reference tables, and free browser-based diagnostic tools connecting classical technical SEO with Answer Engine, Generative, AI, and Search Experience optimization — all written in original, plain language.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#guides" data-nav="guides">Explore All 20 Guides →</a>
+        <a class="btn ghost" href="#toolkit" data-nav="toolkit">Open Interactive SEO Toolkit ↗</a>
+      </div>
+      <div class="hero-stats">
+        <span><b>20</b> long-form guides</span>
+        <span><b>5</b> optimization layers</span>
+        <span><b>4</b> free browser tools</span>
+        <span><b>100%</b> original content</span>
+      </div>
+    </div>
+
+    <div class="pillars" id="pillarRows"></div>
+
+    <!-- Quick checker -->
+    <div class="tool" id="quickTool">
+      <div class="t-top">
+        <div>
+          <div class="kicker" style="letter-spacing:.18em">Interactive Utility · Instant Diagnostic</div>
+          <h2 style="margin-top:8px">Quick SERP Title &amp; Direct-Answer Readiness Checker</h2>
+          <p class="t-sub">Test your page title's pixel width and your opening answer paragraph against SEO and AEO featured-snippet standards, right in your browser. Nothing is uploaded.</p>
+        </div>
+        <a class="btn ghost small" href="#toolkit" data-nav="toolkit">Full 4-Tool Suite ↗</a>
+      </div>
+      <div class="tool-grid">
+        <div>
+          <div class="field">
+            <label for="qTitle">Page Title Tag <span>(Target: 35–60 chars / ≤ 580px)</span></label>
+            <input type="text" id="qTitle" value="Technical SEO Audit Guide: Crawl, Index &amp; Canonicals" />
+          </div>
+          <div class="field">
+            <label for="qAnswer">Opening Direct-Answer Paragraph <span>(AEO Target: 40–58 words)</span></label>
+            <textarea id="qAnswer">A technical SEO audit checks whether search engines can crawl, render and index your pages without redirect chains or directive conflicts. Start by comparing raw HTTP status codes, XML sitemap inventories and server access logs before prioritising template repairs by user impact.</textarea>
+          </div>
+        </div>
+        <div class="result-stack">
+          <div class="result-box">
+            <div class="r-label">Title Pixel Width</div>
+            <div class="r-value" id="qPx">—</div>
+            <span class="pill" id="qPxPill">—</span>
+          </div>
+          <div class="result-box">
+            <div class="r-label">Answer Word Count</div>
+            <div class="r-value" id="qWords">—</div>
+            <span class="pill" id="qWordsPill">—</span>
+          </div>
+          <div class="result-box">
+            <div class="r-label">AEO Readiness Score</div>
+            <div class="r-value" id="qScore">—</div>
+            <span class="pill" id="qScorePill">—</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="homeSections"></div>
+  </div>
+</section>
+
+<!-- ================= ALL GUIDES ================= -->
+<section class="view" id="view-guides">
+  <div class="wrap">
+    <div class="page-head">
+      <div class="kicker">The Complete Library</div>
+      <h1>All Guides</h1>
+      <p>Every iWriteHub guide is a full, long-form article — no thin summaries. Filter by layer, then open any card to read the complete article with workflows, tables and checklists.</p>
+    </div>
+    <div class="chips" id="guideChips"></div>
+    <div class="cards" id="allGuidesGrid" style="margin-top:18px"></div>
+  </div>
+</section>
+
+<!-- ================= CATEGORY ================= -->
+<section class="view" id="view-category">
+  <div class="wrap">
+    <div class="page-head">
+      <div class="kicker" id="catKicker">Curriculum</div>
+      <h1 id="catTitle">Guides</h1>
+      <p id="catIntro"></p>
+    </div>
+    <div class="cards" id="catGrid" style="margin-top:20px"></div>
+  </div>
+</section>
+
+<!-- ================= TOOLKIT ================= -->
+<section class="view" id="view-toolkit">
+  <div class="wrap">
+    <div class="page-head">
+      <div class="kicker">Free Browser-Based Diagnostics</div>
+      <h1>SEO Toolkit</h1>
+      <p>Four practical tools that run entirely in your browser. Paste your text, get instant measurements, and fix issues before you publish. Your text never leaves this page.</p>
+    </div>
+
+    <div class="tool">
+      <div class="kicker" style="letter-spacing:.18em">Tool 1 · SERP Readiness</div>
+      <h2 style="margin-top:8px">SERP Title &amp; Direct-Answer Readiness Checker</h2>
+      <p class="t-sub">The same diagnostic as the homepage quick checker, with full guidance. Titles wider than about 580 pixels are usually truncated in Google results; direct answers of 40–58 words fit the classic featured-snippet window.</p>
+      <div class="tool-grid">
+        <div>
+          <div class="field"><label for="tTitle">Page Title Tag <span>(Target: 35–60 chars / ≤ 580px)</span></label>
+          <input type="text" id="tTitle" value="How to Audit Technical SEO Step by Step | iWriteHub" /></div>
+          <div class="field"><label for="tAnswer">Opening Direct-Answer Paragraph <span>(AEO Target: 40–58 words)</span></label>
+          <textarea id="tAnswer">To audit technical SEO, crawl your whole site, check index coverage in Search Console, review status codes and redirects, test rendering on mobile, and measure Core Web Vitals. Fix crawl blockers first, then canonical conflicts, then speed issues, in that order.</textarea></div>
+        </div>
+        <div class="result-stack">
+          <div class="result-box"><div class="r-label">Title Pixel Width</div><div class="r-value" id="tPx">—</div><span class="pill" id="tPxPill">—</span></div>
+          <div class="result-box"><div class="r-label">Answer Word Count</div><div class="r-value" id="tWords">—</div><span class="pill" id="tWordsPill">—</span></div>
+          <div class="result-box"><div class="r-label">AEO Readiness Score</div><div class="r-value" id="tScore">—</div><span class="pill" id="tScorePill">—</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool">
+      <div class="kicker" style="letter-spacing:.18em">Tool 2 · Meta Tags</div>
+      <h2 style="margin-top:8px">Meta Description Checker</h2>
+      <p class="t-sub">Meta descriptions of roughly 150–160 characters (about 920 pixels on desktop) display in full most often. Longer text is not penalised, but the part readers see should carry your key promise and a reason to click.</p>
+      <div class="tool-grid">
+        <div>
+          <div class="field"><label for="mDesc">Meta Description</label>
+          <textarea id="mDesc" style="min-height:90px">Learn technical SEO step by step: crawl budgets, indexing, canonical tags, Core Web Vitals and schema, explained in plain English with free browser tools.</textarea></div>
+        </div>
+        <div class="result-stack">
+          <div class="result-box"><div class="r-label">Characters</div><div class="r-value" id="mChars">—</div><span class="pill" id="mCharsPill">—</span></div>
+          <div class="result-box"><div class="r-label">Approx. Pixel Width</div><div class="r-value" id="mPx">—</div><span class="pill" id="mPxPill">—</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool">
+      <div class="kicker" style="letter-spacing:.18em">Tool 3 · Content Length</div>
+      <h2 style="margin-top:8px">Word &amp; Character Counter</h2>
+      <p class="t-sub">Count words, characters, sentences and paragraphs, and estimate reading time — useful when planning long-form guides or trimming an introduction.</p>
+      <div class="tool-grid">
+        <div>
+          <div class="field"><label for="wText">Your Text</label>
+          <textarea id="wText" style="min-height:150px" placeholder="Paste or type your article text here…"></textarea></div>
+        </div>
+        <div class="result-stack">
+          <div class="result-box"><div class="r-label">Words</div><div class="r-value" id="wWords">0</div></div>
+          <div class="result-box"><div class="r-label">Characters / Sentences</div><div class="r-value" id="wChars" style="font-size:1.15rem">0 / 0</div></div>
+          <div class="result-box"><div class="r-label">Estimated Reading Time</div><div class="r-value" id="wTime">0 min</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool">
+      <div class="kicker" style="letter-spacing:.18em">Tool 4 · Keyword Usage</div>
+      <h2 style="margin-top:8px">Keyword Density Checker</h2>
+      <p class="t-sub">Check how often a target phrase appears in your text. There is no magic percentage — natural coverage of the topic matters more — but this helps you spot accidental stuffing or a missing main term.</p>
+      <div class="tool-grid">
+        <div>
+          <div class="field"><label for="kWord">Target Keyword or Phrase</label>
+          <input type="text" id="kWord" placeholder="e.g. technical seo audit" /></div>
+          <div class="field"><label for="kText">Your Text</label>
+          <textarea id="kText" style="min-height:120px" placeholder="Paste the article text to analyse…"></textarea></div>
+        </div>
+        <div class="result-stack">
+          <div class="result-box"><div class="r-label">Occurrences</div><div class="r-value" id="kCount">0</div></div>
+          <div class="result-box"><div class="r-label">Density</div><div class="r-value" id="kDensity">0%</div><span class="pill" id="kPill">Enter a keyword</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ARTICLE ================= -->
+<section class="view" id="view-article">
+  <div class="wrap">
+    <a class="back-link" href="#guides" data-nav="guides">← Back to all guides</a>
+    <div class="article-wrap">
+      <div class="kicker" id="artCat" style="margin-top:14px">Guide</div>
+      <h1 id="artTitle" style="font-size:clamp(1.8rem,4.6vw,2.6rem);letter-spacing:-.02em;margin-top:10px"></h1>
+      <div class="article-meta" id="artMeta"></div>
+    </div>
+    <div class="article-hero"><img id="artImg" src="assets/img-analytics.jpg" alt="Article illustration" /></div>
+    <div class="article-wrap">
+      <div class="article-body" id="artBody" style="margin-top:28px"></div>
+      <div class="related">
+        <div class="section-head"><div><div class="kicker">Keep Reading</div><h2>Related guides</h2></div></div>
+        <div class="cards" id="relatedGrid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="view" id="view-about">
+  <div class="wrap">
+    <div class="page-head">
+      <div class="kicker">About This Library</div>
+      <h1>About iWriteHub</h1>
+    </div>
+    <div class="prose">
+      <p>iWriteHub is an independent learning library about how content gets found, understood and chosen on the modern web. Search no longer ends at a blue link: answers are read aloud, summarised by AI assistants and judged by the experience on the page itself. Our guides organise that reality into five layers — SEO, AEO, GEO, AIO and SXO — and teach each one with full, long-form articles instead of thin tips.</p>
+      <h2>What we publish</h2>
+      <p>Every article on iWriteHub is written for this site, in our own words, and structured the way we teach: a direct answer first, then the reasoning, the workflow, the tables and the checklists. We cover crawl budgets and canonical tags alongside featured-snippet writing, AI citation habits, entity clarity and honest conversion design, because in practice these are one connected system.</p>
+      <h2>Our editorial standards</h2>
+      <ul>
+        <li><b>Original, always.</b> We never copy another site's text. Where we describe a widely known concept, we explain it from first principles and our own examples.</li>
+        <li><b>No guaranteed rankings.</b> Search engines do not sell positions, and neither do we. We teach durable methods, not tricks.</li>
+        <li><b>Evidence over folklore.</b> Where a number appears (a pixel width, a word window), we explain what it measures and where its limits are.</li>
+        <li><b>Reader first.</b> If a tactic would annoy a real visitor, we say so — even when it might squeeze a short-term metric.</li>
+      </ul>
+      <h2>The tools</h2>
+      <p>The SEO Toolkit runs entirely in your browser. The readiness checker measures title pixel width with the same canvas text metrics your browser uses to draw text, counts answer words, and scores how closely a draft matches the ranges we teach in the AEO guides. Nothing you paste is uploaded, stored or tracked.</p>
+      <h2>Contact</h2>
+      <p>Questions, corrections and topic requests are welcome on the <a href="#contact" data-nav="contact">Contact page</a>. If you find an error in a guide, tell us — accuracy is the whole point of this library.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="view" id="view-faq">
+  <div class="wrap">
+    <div class="page-head">
+      <div class="kicker">Common Questions</div>
+      <h1>Frequently Asked Questions</h1>
+      <p>Short, direct answers about the five layers, the guides and the tools — written the way our AEO guides recommend.</p>
+    </div>
+    <div style="max-width:820px;margin-top:22px" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="view" id="view-contact">
+  <div class="wrap">
+    <div class="page-head">
+      <div class="kicker">Get In Touch</div>
+      <h1>Contact iWriteHub</h1>
+      <p>Send a correction, a topic request or a question about a guide. The form opens your own email app with the message ready to send — nothing is stored on this site.</p>
+    </div>
+    <form class="contact-form" id="contactForm" style="margin-top:22px">
+      <div class="field"><label for="cName">Your name</label><input type="text" id="cName" required placeholder="Your name" /></div>
+      <div class="field"><label for="cEmail">Your email</label><input type="text" id="cEmail" required placeholder="you@example.com" /></div>
+      <div class="field"><label for="cSubject">Subject</label><input type="text" id="cSubject" required placeholder="What is this about?" /></div>
+      <div class="field"><label for="cMsg">Message</label><textarea id="cMsg" required placeholder="Write your message…"></textarea></div>
+      <button class="btn" type="submit">Open in Mail App →</button>
+      <p class="form-note">This opens your email program addressed to contact@iwritehub.github.io with your text pre-filled. You can review and edit it before sending.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= PRIVACY ================= -->
+<section class="view" id="view-privacy">
+  <div class="wrap">
+    <div class="page-head"><div class="kicker">Legal</div><h1>Privacy Policy</h1><p>Last updated: November 20, 2026</p></div>
+    <div class="prose">
+      <p>iWriteHub (https://iwritehub.github.io/) is a static educational website. This policy explains, in plain language, what information is involved when you use it.</p>
+      <h2>Information we collect</h2>
+      <p>We do not run user accounts, comment systems or a server database, and we do not collect names, email addresses or other personal information through this website. The tools in the SEO Toolkit process text locally in your browser; the text you paste is never transmitted to us or to any third party.</p>
+      <h2>Cookies and local storage</h2>
+      <p>The site itself sets no tracking cookies. Your browser may store your cookie-notice choice locally on your device so the notice does not reappear on every visit. If advertising is added in the future, third-party vendors, including Google, may use cookies to serve ads based on your prior visits to this or other websites. You can opt out of personalised advertising through Google's Ads Settings, and you can clear or block cookies in your browser at any time.</p>
+      <h2>Analytics</h2>
+      <p>If privacy-respecting, aggregate analytics are enabled, they measure page popularity and performance only — never the content of text you enter into the tools.</p>
+      <h2>External links</h2>
+      <p>Guides may link to official documentation and other external resources. We are not responsible for the privacy practices of external sites; please review their policies.</p>
+      <h2>Children's privacy</h2>
+      <p>This site is an educational resource for a general audience and does not knowingly collect information from children.</p>
+      <h2>Changes and contact</h2>
+      <p>We may update this policy as the site evolves; the current version will always be posted on this page. Questions about privacy can be sent through the <a href="#contact" data-nav="contact">Contact page</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TERMS ================= -->
+<section class="view" id="view-terms">
+  <div class="wrap">
+    <div class="page-head"><div class="kicker">Legal</div><h1>Terms of Use</h1><p>Last updated: November 20, 2026</p></div>
+    <div class="prose">
+      <p>By using iWriteHub you agree to these terms. If you do not agree, please do not use the site.</p>
+      <h2>Educational content</h2>
+      <p>All guides, tables and tools are provided for education and general information. Search engines change their systems frequently; we work to keep guidance accurate but cannot guarantee that any technique will produce a specific ranking, traffic level, citation or revenue outcome.</p>
+      <h2>Acceptable use</h2>
+      <ul>
+        <li>Use the tools for your own content and lawful projects.</li>
+        <li>Do not republish our articles wholesale as your own work. Brief quotations with a clear link back are welcome.</li>
+        <li>Do not attempt to disrupt the site or misrepresent its tools as official products of any search engine.</li>
+      </ul>
+      <h2>Intellectual property</h2>
+      <p>The text, structure and design of iWriteHub are the site's own original work. Third-party product and company names mentioned in guides belong to their respective owners and are used for description only.</p>
+      <h2>Liability</h2>
+      <p>The site and tools are provided "as is" without warranties of any kind. To the extent permitted by law, iWriteHub is not liable for losses arising from decisions made using this content. Always test changes on your own site and keep backups.</p>
+      <h2>Changes</h2>
+      <p>We may revise these terms; continued use of the site after changes are posted means you accept the updated terms.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="footer-in">
+    <div>
+      <a class="logo" href="#home" data-nav="home" style="font-size:1.15rem">
+        <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0b6e5d"/><path d="M9 23c4-1 5-3 6-7l6-7c.6-.7 1.7-.2 1.7.7L21 17c-1 4-3 6-7 6H9z" fill="#dff3c9"/></svg>
+        iWrite<span class="hub" style="margin-left:-7px">Hub</span>
+      </a>
+      <p>A free library of original, long-form guides and browser tools for SEO, AEO, GEO, AIO and SXO — from crawled to converted.</p>
+    </div>
+    <div>
+      <h4>Layers</h4>
+      <a href="#category/seo" data-nav="cat-seo">SEO Guides</a>
+      <a href="#category/aeo" data-nav="cat-aeo">AEO Guides</a>
+      <a href="#category/geo" data-nav="cat-geo">GEO Guides</a>
+      <a href="#category/aio" data-nav="cat-aio">AIO Guides</a>
+      <a href="#category/sxo" data-nav="cat-sxo">SXO Guides</a>
+    </div>
+    <div>
+      <h4>Library</h4>
+      <a href="#guides" data-nav="guides">All Guides</a>
+      <a href="#toolkit" data-nav="toolkit">SEO Toolkit</a>
+      <a href="#faq" data-nav="faq">FAQ</a>
+      <a href="#about" data-nav="about">About</a>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <a href="#contact" data-nav="contact">Contact</a>
+      <a href="#privacy" data-nav="privacy">Privacy Policy</a>
+      <a href="#terms" data-nav="terms">Terms of Use</a>
+    </div>
+  </div>
+  <div class="footer-base">© 2026 iWriteHub · https://iwritehub.github.io/ · All content is original and written for this library.</div>
+</footer>
+
+<div class="cookie" id="cookieBar" role="dialog" aria-label="Cookie notice">
+  <p><b>Privacy &amp; Cookie Notice:</b> See our <a href="#privacy" data-nav="privacy">Privacy Policy</a> for details about cookies and advertising. Your preference for this library is stored in this browser.</p>
+  <button class="btn" id="cookieAccept">Accept All</button>
+  <button class="btn ghost2" id="cookieEssential">Essential Only</button>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+"use strict";
+/* ============ DATA ============ */
+var CATS = {
+  seo:{name:"SEO", full:"Search Engine Optimization", goal:"Get crawled, then indexed and ranked",
+    intro:"SEO is the foundation layer: everything search engines must do before your page can be seen at all. These guides cover crawlability, indexing, content quality, topical structure, internal linking, page experience, structured data, trust signals and honest link earning — the full classical discipline, taught as one connected workflow.",
+    cols:[["Focus",["Technical SEO","Content Quality","Topical Authority","Internal Linking","Core Web Vitals","Schema","E-E-A-T","Backlinks"]]],
+    metrics:["Rankings","Organic Traffic","Indexed Pages"]},
+  aeo:{name:"AEO", full:"Answer Engine Optimization", goal:"Become the direct answer",
+    intro:"AEO is the craft of shaping content so search engines and AI assistants can lift it as the answer itself — in featured snippets, AI Overviews, voice results and rich results. These guides teach question-first structure, the direct-answer window, and the schema that supports it.",
+    cols:[["Optimize for",["Google AI Overviews","Featured Snippets","Voice Search","FAQ Answers","Rich Results"]],["Requirements",["Question-first content","Short direct answers","Lists","Tables","FAQ schema","Clear entities"]]],
+    metrics:["AI Overviews","Featured Snippets","Zero-click Visibility"]},
+  geo:{name:"GEO", full:"Generative Engine Optimization", goal:"Get cited by AI",
+    intro:"GEO concerns what happens inside AI-generated answers: which sources get cited, quoted and trusted when tools like ChatGPT, Gemini, Perplexity and Copilot compose a response. These guides cover evidence-backed writing and publishing original research that assistants can verify and reference.",
+    cols:[["Platforms",["ChatGPT","Gemini","Perplexity","Claude","Copilot"]],["Optimize with",["Original research","Statistics","Expert opinions","Brand mentions","Entity consistency","Fresh updates","Structured content"]]],
+    metrics:["AI Citations","AI Mentions","Brand References"]},
+  aio:{name:"AIO", full:"AI Optimization", goal:"Make content clear for AI",
+    intro:"AIO makes your content machine-readable at the source: consistent entities, clean semantic structure, honest structured data and media that AI systems can interpret correctly. Where GEO is about being cited, AIO is about being understood in the first place.",
+    cols:[["Optimize",["Semantic entities","Knowledge graph signals","Machine-readable content","Structured data","Consistent brand information","Multimedia","Freshness"]],["AI reads",["Text","Images","PDFs","Videos","Tables","Structured data"]]],
+    metrics:["AI Understanding","Entity Recognition","Better AI Visibility"]},
+  sxo:{name:"SXO", full:"Search Experience Optimization", goal:"Turn visitors into customers",
+    intro:"SXO starts where the click lands. It connects search intent to page experience: readable layouts, mobile comfort, trust signals and honest calls to action, measured by completed outcomes rather than raw clicks. These guides close the loop from crawled to converted.",
+    cols:[["Improve",["UX","Page Speed","Navigation","Trust Signals","Readability","Conversion Rate","Mobile Experience"]]],
+    metrics:["Engagement","Leads","Sales","Revenue"]}
+};
+var ICONS = {
+  seo:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>',
+  aeo:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5c-1.5 0-3-.4-4.2-1.1L3 20l1.1-5.3A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 10.5h7M8.5 13.5h4"/></svg>',
+  geo:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.9 5.7 3.9 9S14.5 18.4 12 21c-2.5-2.6-3.9-5.7-3.9-9S9.5 5.6 12 3z"/></svg>',
+  aio:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.4L12 15l-1.9-4.6L5.5 9l4.6-1.4L12 3z"/><path d="M18.5 15.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8.8-2z"/></svg>',
+  sxo:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg>',
+  check:'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" stroke-width="1.6"/><path d="M8.5 12.2l2.4 2.4 4.6-5"/></svg>'
+};
+var ARTICLES = [
+/* ================= SEO ================= */
+{slug:"seo-foundations", cat:"seo", img:"assets/img-analytics.jpg", alt:"Laptop showing an SEO analytics dashboard with traffic charts", date:"Nov 4, 2026", read:"11 min read",
+ title:"SEO Foundations: Build a Website Search Engines Can Actually Find",
+ excerpt:"Start with a search-ready website: clear architecture, useful content and the technical foundations you can actually measure.",
+ body:'<p>Every ranking you will ever earn sits on a simple chain of events: a search engine must <b>crawl</b> your page, <b>index</b> it, and then decide it deserves to <b>rank</b> for a query. SEO foundations are the work that makes all three steps easy. Skip them, and no amount of clever promotion will save a page that crawlers cannot reach or understand.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>SEO foundations mean a crawlable site structure, one clear topic per page, fast and stable pages on mobile, honest titles that match the content, and internal links that show how pages relate. Build those five things first; everything else in this library is an optimisation on top of them.</p></div>'
+ +'<h2>1. Architecture before articles</h2><p>Most weak sites do not have a content problem; they have a structure problem. Pages are published wherever they fit, URLs multiply, and no page clearly owns a topic. Before writing anything new, sketch your site as a tree: a homepage, a small number of category pages, and articles that each belong to exactly one category. A visitor — and a crawler — should reach any article within three clicks of the homepage.</p><p>Keep URLs short, readable and stable. <span class="mono">/guides/internal-linking/</span> tells a human what the page is before it loads; <span class="mono">/p?id=4821</span> tells them nothing. Once a URL is live and linked, treat it as permanent: if it must move, redirect it permanently (301) to the closest equivalent page.</p>'
+ +'<h2>2. One page, one job</h2><p>Each page should target one primary search intent. When two pages compete for the same query — a problem called keyword cannibalisation — search engines split their trust between them and often rank neither well. Merge overlapping pages into the stronger one, redirect the weaker URL, and update internal links to point at the survivor.</p><p>Intent matters more than the exact keyword. A searcher typing "how to fix a leaking tap" wants steps, not a history of plumbing. Match the format to the intent: guides for "how", comparisons for "best", tools for "calculator", and direct answers for definitions.</p>'
+ +'<h2>3. The technical floor</h2><p>You do not need to be a developer, but four technical items are non-negotiable:</p><ul><li><b>HTTPS everywhere.</b> Browsers mark plain HTTP pages "not secure", and search engines treat HTTPS as a baseline trust signal.</li><li><b>A sitemap that tells the truth.</b> Your XML sitemap should list only live, indexable, canonical URLs — no redirects, no blocked pages, no 404s.</li><li><b>A robots.txt that does not block your own site.</b> One wrong line can hide everything. Test it after every change.</li><li><b>Mobile rendering that matches desktop.</b> Google indexes the mobile version of your pages. If content disappears on mobile, it effectively disappears from search.</li></ul>'
+ +'<h2>4. Titles and headings that earn the click</h2><p>Your title tag is both a ranking input and your advert in the results. Put the primary topic early, keep the whole title within roughly 580 pixels (about 50–60 characters) so it is not truncated, and write it for a person scanning a list, not for an algorithm counting keywords. Headings inside the page should form a logical outline — one H1, then H2 sections, then H3 detail — because that outline is how both readers and machines skim your argument.</p>'
+ +'<h2>5. Measure the foundations</h2><table><tr><th>Foundation</th><th>What "good" looks like</th><th>Where to check</th></tr><tr><td>Crawlability</td><td>Important pages return HTTP 200 and are not blocked</td><td>Server logs, Search Console URL Inspection</td></tr><tr><td>Indexation</td><td>Indexed pages ≈ pages you intend to rank</td><td>Search Console Pages report</td></tr><tr><td>Structure</td><td>Every article within 3 clicks of home, no orphans</td><td>Any site crawler</td></tr><tr><td>Speed</td><td>LCP ≤ 2.5s, INP ≤ 200ms, CLS ≤ 0.1 on mobile</td><td>PageSpeed Insights, CrUX data</td></tr><tr><td>Clarity</td><td>One intent per page, descriptive titles</td><td>Manual review of top pages</td></tr></table>'
+ +'<div class="callout"><b class="t">A realistic first month</b><p>Week 1: fix crawl and index problems. Week 2: repair site structure and merge duplicate pages. Week 3: rewrite titles and headings on your ten most important pages. Week 4: add internal links from strong pages to weak ones. Foundations compound — each fix makes the next piece of content work harder.</p></div>'
+ +'<h2>Common foundation mistakes</h2><ul><li>Publishing dozens of thin pages instead of a few complete ones.</li><li>Blocking CSS or JavaScript files that the page needs to render.</li><li>Changing URLs during a redesign without redirects.</li><li>Writing for a keyword instead of the person searching it.</li><li>Judging SEO by one ranking instead of indexed pages, impressions and clicks over time.</li></ul>'
+ +'<p>With these foundations in place, the rest of this library becomes useful: the <a href="#article/technical-seo-audit">technical audit workflow</a> keeps the base healthy, and the AEO and GEO guides build visibility on top of pages that search engines already trust.</p>'},
+
+{slug:"technical-seo-audit", cat:"seo", img:"assets/img-code.jpg", alt:"Colourful source code on a computer screen during a technical review", date:"Nov 12, 2026", read:"13 min read",
+ title:"How to Audit the Technical SEO of Your Website, Step by Step",
+ excerpt:"A practical audit workflow for crawling, indexing, HTTP responses, canonical URLs and the technical issues that stop useful pages from being found.",
+ body:'<p>A technical SEO audit answers one question: <b>can search engines reach, render and index your important pages exactly as you intend?</b> It is not a 200-item checklist you run once a year. It is a repeatable workflow — crawl, compare, prioritise, fix, verify — that keeps the machinery of your site honest while content does the persuading.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>Audit in this order: (1) crawl the full site and record status codes, (2) compare the crawl against your sitemap and Search Console index data, (3) check canonical and redirect behaviour, (4) test rendering on mobile, (5) measure Core Web Vitals, then fix issues in that order — access first, meaning second, speed last.</p></div>'
+ +'<h2>Step 1: Crawl everything and record the raw facts</h2><p>Run a full crawl with a desktop and a mobile user agent. Export, at minimum: URL, status code, indexability, title, canonical tag, word count and inlink count. The crawl is your ground truth — marketing dashboards and CMS reports regularly disagree with what a crawler actually receives.</p><p>Read the status codes first. Healthy sites are boring: mostly 200s, a tidy set of permanent redirects, and very few surprises.</p><table><tr><th>Code</th><th>Meaning</th><th>Audit action</th></tr><tr><td>200</td><td>Page served normally</td><td>Check it deserves to exist and be indexed</td></tr><tr><td>301 / 308</td><td>Permanent redirect</td><td>Confirm the destination is the true equivalent; collapse chains to one hop</td></tr><tr><td>302 / 307</td><td>Temporary redirect</td><td>Fine for short campaigns; suspicious if permanent in practice</td></tr><tr><td>404</td><td>Not found</td><td>Restore, redirect to a real equivalent, or leave 404 if the page is truly gone</td></tr><tr><td>5xx</td><td>Server error</td><td>Urgent: pages drop from the index if errors persist</td></tr><tr><td>Soft 404</td><td>Error content served with a 200</td><td>Fix the template so missing pages return a real 404</td></tr></table>'
+ +'<h2>Step 2: Reconcile crawl, sitemap and index</h2><p>Three lists should mostly agree: pages your crawler found, URLs in your XML sitemap, and pages Google has indexed (Search Console → Pages). Investigate every mismatch class:</p><ul><li><b>Crawled but not in sitemap:</b> orphan or legacy pages — decide deliberately whether they should exist.</li><li><b>In sitemap but never indexed:</b> thin, duplicate or blocked content is the usual cause.</li><li><b>Indexed but not in sitemap:</b> often old URLs kept alive by external links; redirect or accept them consciously.</li><li><b>"Crawled — currently not indexed":</b> Google visited and chose not to keep the page. That is a quality and duplication signal, not a button to mash.</li></ul>'
+ +'<h2>Step 3: Canonicals and duplicates</h2><p>The canonical tag is a strong hint about which URL should represent a set of similar pages. Audit that every canonical is absolute, returns 200, is itself indexable, and points to the version you actually promote in sitemaps and internal links. Mixed signals — sitemap lists A, internal links point to B, canonical says C — are how good pages vanish.</p><p>Hunt duplicates by title and by content: parameter URLs, print versions, HTTP/HTTPS or www/non-www twins, and trailing-slash variants should all resolve to one canonical address.</p>'
+ +'<h2>Step 4: Rendering and mobile parity</h2><p>Use Search Console\'s URL Inspection "Test Live URL" and view the rendered HTML and screenshot. Confirm the main content, links and structured data exist in the rendered output — not only after user interaction. Content hidden behind clicks, or loaded only on desktop, is content Google may never index.</p>'
+ +'<h2>Step 5: Performance budgets</h2><p>Measure field data (real users, 28-day window) rather than only lab scores. The thresholds that matter: Largest Contentful Paint ≤ 2.5 seconds, Interaction to Next Paint ≤ 200 milliseconds, Cumulative Layout Shift ≤ 0.1. Fix LCP by optimising the hero image and server response, INP by breaking up long JavaScript tasks, and CLS by reserving space for images and ads. Our <a href="#article/core-web-vitals">Core Web Vitals guide</a> walks through each metric in plain language.</p>'
+ +'<div class="callout"><b class="t">Prioritise like an engineer</b><p>Score each finding by (pages affected × user impact) ÷ effort. A template bug breaking 4,000 product pages outranks a missing alt attribute on one blog post. Write the audit as a ticket list an owner can actually finish, not a PDF that gets admired and shelved.</p></div>'
+ +'<h2>Verify, then schedule the next audit</h2><p>After fixes ship, re-crawl and diff against the baseline: status codes, indexability and canonicals should change exactly where you intended and nowhere else. Validate fixes in Search Console for the highest-value templates. Then put the audit on a calendar — quarterly for most sites, monthly for large or fast-changing ones, and always after a redesign, migration or CMS update.</p><ul class="checklist"><li>Full crawl exported and saved as the baseline</li><li>Status-code and redirect-chain issues ticketed</li><li>Sitemap, crawl and index lists reconciled</li><li>Canonical conflicts resolved</li><li>Mobile rendering verified on key templates</li><li>Core Web Vitals checked against budgets</li><li>Re-crawl diff reviewed after fixes</li></ul>'},
+
+{slug:"helpful-content", cat:"seo", img:"assets/img-writing.jpg", alt:"Hand writing in a notebook with a fountain pen", date:"Nov 12, 2026", read:"10 min read",
+ title:"Writing Helpful Content for Real Readers",
+ excerpt:"An editorial method for matching intent, adding evidence, checking accuracy and turning a long article into a genuinely helpful resource.",
+ body:'<p>"Helpful content" is easy to say and hard to fake. Search engines reward it because readers reward it: the page that actually solves the problem earns the return visits, the links, the saves and the citations. This guide is the editorial method we use at iWriteHub to turn a topic into an article a real person would thank you for.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>Helpful content starts from a specific reader problem, answers it directly in the first screen, then proves the answer with steps, examples and evidence the reader can check. It is written by someone who understands the subject, edited for clarity, dated honestly, and updated when the facts change.</p></div>'
+ +'<h2>Start with the reader\'s situation, not the keyword</h2><p>Before drafting, write one sentence: "The reader arrives because ___, and leaves able to ___." If you cannot fill both blanks, you do not have an article yet — you have a topic. Keywords still matter for discoverability, but they describe the reader\'s language, not the article\'s purpose. A page about "email deliverability" becomes helpful when it is framed as "why your invoices land in spam, and the three settings that fix it".</p>'
+ +'<h2>Answer first, then earn the scroll</h2><p>Put the direct answer near the top — a short paragraph or box a skimmer can use immediately. This is not dumbing down; it is respect. Readers who need depth will continue into your reasoning, steps and caveats, and readers in a hurry leave satisfied instead of frustrated. Our AEO guides explain the mechanics of the <a href="#article/direct-answer-window">40–58 word answer window</a>; the editorial principle is older than search engines: do not bury the lede.</p>'
+ +'<h2>Add something only you can add</h2><p>The web does not need a tenth copy of the same summary. Helpful articles contribute at least one original element:</p><ul><li><b>Experience:</b> what actually happened when you did the thing, including what failed.</li><li><b>Evidence:</b> measurements, screenshots, data or primary sources the reader can verify.</li><li><b>Examples:</b> a worked example with real numbers beats three paragraphs of abstraction.</li><li><b>Judgement:</b> a clear recommendation and the conditions under which it changes.</li><li><b>Synthesis:</b> scattered facts organised into a framework, table or decision path.</li></ul>'
+ +'<h2>Structure for scanning and for depth</h2><p>Long-form does not mean wall-of-text. Use descriptive headings that state conclusions ("Redirect chains waste crawl budget") instead of labels ("Redirects"). Break processes into numbered steps, comparisons into tables, and warnings into callouts. Every few hundred words, give the reader a handhold: a list, a table, a summary line. Depth is welcome when the path through it is obvious.</p>'
+ +'<h2>Accuracy is an editorial process</h2><table><tr><th>Check</th><th>Question to ask</th></tr><tr><td>Facts</td><td>Can I point to the source for every number and claim?</td></tr><tr><td>Currency</td><td>Has anything changed since this was written? Is the date honest?</td></tr><tr><td>Completeness</td><td>What would a disappointed reader still need to search for?</td></tr><tr><td>Fairness</td><td>Have I stated limits and alternatives, or only the convenient parts?</td></tr><tr><td>Clarity</td><td>Could a smart beginner follow this without another tab open?</td></tr></table>'
+ +'<div class="callout"><b class="t">The deletion test</b><p>Read each paragraph and ask: "If I deleted this, would the reader lose an answer, a step, or a piece of evidence?" If not, delete it. Helpful articles are long because the subject demands it — never because length itself was the goal.</p></div>'
+ +'<h2>Maintain what you publish</h2><p>Helpfulness decays. Prices change, interfaces move, recommendations age. Schedule reviews for your important articles, update the changed facts (not just the date), and say what changed when it matters. A smaller library of maintained, genuinely useful articles will outperform a large archive of abandoned ones — with readers and with every search system that learns from them.</p>'},
+
+{slug:"topical-authority", cat:"seo", img:"assets/img-team.jpg", alt:"Team planning content together around a table with laptops", date:"Nov 13, 2026", read:"11 min read",
+ title:"Building Topical Authority with a Useful Content Map",
+ excerpt:"Organize pillars and supporting articles around real reader needs, with distinct intent, credible coverage and manageable editorial priorities.",
+ body:'<p>Topical authority is the reputation a site earns within a subject: publish complete, well-organised coverage of a topic, and search engines — and now AI assistants — learn to treat you as a source for it. It is not a score you can check. It is the accumulated effect of depth, structure and consistency over time.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>Build topical authority by choosing a focused subject area, publishing one strong pillar page per major theme, supporting each pillar with articles that answer specific sub-questions, and linking them together deliberately. Cover the topic a reader actually needs — completely, but without padding into subjects you cannot speak about credibly.</p></div>'
+ +'<h2>The pillar-and-cluster model</h2><p>A <b>pillar page</b> is the definitive overview of a theme: broad, structured, and linked to everything beneath it. <b>Cluster articles</b> each answer one narrower question in depth. On this site, the five layers are pillars; the article you are reading is one cluster inside the SEO pillar. The model works because it mirrors how knowledge is organised — overview first, detail on demand — and because every internal link reinforces the relationship.</p>'
+ +'<h2>Draw the map before writing</h2><p>List the questions a real reader asks about your topic, in the order they ask them: definitions first, then how-tos, then comparisons, troubleshooting and advanced cases. Group them under pillars. You now have a content map — and, just as usefully, a map of what you will <i>not</i> write, because it belongs to a different topic or a credibility you have not earned.</p><table><tr><th>Layer of the map</th><th>Purpose</th><th>Example (this site)</th></tr><tr><td>Pillar</td><td>Own the theme, route readers</td><td>The SEO layer overview</td></tr><tr><td>Core guides</td><td>Answer the main how/why questions</td><td>Technical audit workflow</td></tr><tr><td>Supporting articles</td><td>Cover specifics and edge cases</td><td>Canonical conflicts checklist</td></tr><tr><td>Updates</td><td>Keep the map true as facts change</td><td>Quarterly guide reviews</td></tr></table>'
+ +'<h2>Depth beats breadth — with boundaries</h2><p>Twenty connected articles on one subject usually outperform two hundred scattered ones. But depth has a boundary: your genuine knowledge. A motor-parts shop writing authoritatively about motorcycle maintenance earns trust; the same shop publishing generic articles about cryptocurrency spends it. Search systems increasingly detect this mismatch through the same signals readers use — specificity, consistency and evidence.</p>'
+ +'<h2>Link the map like you mean it</h2><p>Every cluster article should link up to its pillar and sideways to its closest siblings, with anchor text that describes the destination. The pillar links down to every cluster it governs. This is not decoration: internal links are how crawlers discover the structure and how readers experience your authority as a guided path instead of a pile of pages. Our <a href="#article/internal-linking">internal linking guide</a> covers the mechanics in detail.</p>'
+ +'<div class="callout"><b class="t">Grow in rings</b><p>Publish the pillar and its five most-needed clusters first. Measure which questions readers actually pursue, then expand outward one ring at a time. A map that grows by evidence stays coherent; a map that launches with 200 planned pages usually collapses under its own maintenance.</p></div>'
+ +'<h2>Signs your authority is compounding</h2><ul><li>Impressions grow for whole families of related queries, not single keywords.</li><li>New articles in the cluster get indexed and start ranking faster than your early ones did.</li><li>Other sites and AI answers cite your pillar pages as the reference.</li><li>Readers arrive on one article and read three.</li></ul><p>Topical authority is slow to build and slow to lose — which is exactly why it is worth building properly.</p>'},
+
+{slug:"internal-linking", cat:"seo", img:"assets/img-typing.jpg", alt:"Hands typing on a laptop keyboard while drafting an article", date:"Nov 14, 2026", read:"10 min read",
+ title:"Internal Linking That Helps Readers Find the Next Answer",
+ excerpt:"Build clear routes between pillars, supporting posts and categories using descriptive anchors, reliable destinations and an editorially useful structure.",
+ body:'<p>Internal links are the most under-priced asset in SEO. They cost nothing, you control them completely, and they do three jobs at once: they help crawlers discover and prioritise your pages, they distribute the authority your strong pages earn, and — most importantly — they guide readers to the next answer at the moment they need it.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>Link internally whenever a reader would genuinely benefit from the destination: from strong pages to pages you want to lift, from overviews down to details and back up again, using anchor text that describes what the reader will find. Avoid orphan pages, generic "click here" anchors, and links added only to pass ranking signals.</p></div>'
+ +'<h2>How crawlers read your links</h2><p>A page with no internal links pointing to it is an orphan: crawlers may find it through a sitemap, but every signal says it does not matter. Conversely, pages linked from your homepage and main categories are crawled more often and treated as more important. When you publish something that matters, the launch checklist must include adding links <i>to</i> it from relevant existing pages — not just links <i>from</i> it.</p>'
+ +'<h2>Anchor text is a promise</h2><p>Anchor text tells readers and machines what the destination covers. Descriptive anchors ("our guide to canonical tags") help both; vague ones ("click here", "read more", a bare URL) waste the signal and the reader\'s attention. Vary anchors naturally — a page linked fifty times with identical keyword-stuffed text looks engineered, because it is. Write the anchor you would write if rankings did not exist; that is usually the right one.</p>'
+ +'<h2>Build routes, not piles</h2><table><tr><th>Route</th><th>Direction</th><th>Why it works</th></tr><tr><td>Pillar → cluster</td><td>Overview links down to each detailed guide</td><td>Shows the full map; distributes attention</td></tr><tr><td>Cluster → pillar</td><td>Each guide links back to its overview</td><td>Reinforces the topic relationship</td></tr><tr><td>Sibling → sibling</td><td>Related guides cross-link where relevant</td><td>Keeps readers moving inside the topic</td></tr><tr><td>Strong → weak</td><td>High-traffic pages link to pages you want to lift</td><td>Shares earned authority deliberately</td></tr><tr><td>Old → new</td><td>Update popular old articles to link new ones</td><td>New pages launch with real pathways</td></tr></table>'
+ +'<h2>How many links is right?</h2><p>Enough that each is justified. A 1,500-word guide might naturally carry five to ten internal links; a link list of forty helps no one. Place links inside sentences where the reader\'s curiosity peaks, not in a dumped "related links" block at the bottom. And keep destinations reliable: a link that lands on a redirected, outdated or deleted page breaks the promise the anchor made.</p>'
+ +'<div class="callout"><b class="t">The quarterly link audit</b><p>Four checks, one hour: (1) find orphan pages and give each at least two contextual links or retire it; (2) find your five highest-traffic pages and confirm each links to your current priorities; (3) repair links pointing to redirects — point them at the final URL; (4) scan for repeated identical anchors and rewrite the worst offenders in your own varied words.</p></div>'
+ +'<h2>Links and the other layers</h2><p>Internal linking quietly powers everything else in this library. It is how a pillar earns topical authority, how an AEO answer gets discovered in context, and how SXO works at all — a reader who cannot find the next step cannot convert. Treat links as editorial decisions, reviewed like headlines, and your whole site gets easier to use and easier to rank.</p>'},
+
+{slug:"core-web-vitals", cat:"seo", img:"assets/img-dashboard.jpg", alt:"MacBook on a desk displaying an SEO analytics dashboard with rising metrics", date:"Nov 14, 2026", read:"10 min read",
+ title:"Improving Core Web Vitals for Your Readers",
+ excerpt:"Diagnose loading speed, interaction delays and visual instability with practical fixes that account for real content, mobile devices and advertising.",
+ body:'<p>Core Web Vitals are Google\'s standardised measures of how a page <i>feels</i> to use: how fast the main content appears, how quickly the page responds when tapped, and how much the layout jumps around while loading. They are a modest ranking factor and a major user-experience factor — readers abandon slow, jumpy pages long before any algorithm notices.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>Core Web Vitals are three field metrics: Largest Contentful Paint (loading, target ≤ 2.5s), Interaction to Next Paint (responsiveness, ≤ 200ms), and Cumulative Layout Shift (visual stability, ≤ 0.1). They are measured from real visitors over 28 days, and 75% of visits must meet the target for a page to pass.</p></div>'
+ +'<h2>LCP: make the main thing arrive fast</h2><p>Largest Contentful Paint times when the biggest element in the viewport — usually a hero image or headline — finishes rendering. Common causes of a slow LCP: an unoptimised hero image, render-blocking CSS, slow server response, and images loaded lazily that should be eager. Fix in this order: serve the hero image in a modern format sized for the device, preload it if it is above the fold, cut blocking resources, and improve time-to-first-byte with caching or a CDN.</p>'
+ +'<h2>INP: respect the tap</h2><p>Interaction to Next Paint replaced First Input Delay in 2024. It measures the full delay between a user\'s tap or keypress and the next visual update. Long JavaScript tasks are the usual villain: heavy frameworks, third-party scripts and oversized event handlers. Break tasks into smaller chunks, defer scripts that are not needed for the first interaction, and remove tag-manager passengers that nobody remembers installing.</p>'
+ +'<h2>CLS: stop the page from jumping</h2><p>Cumulative Layout Shift scores unexpected movement of visible elements. The classic offenders: images without width and height attributes, ads and embeds injected without reserved space, and web fonts that swap late and resize text. Always declare image dimensions, reserve fixed containers for ad slots and embeds, and use <span class="mono">font-display: optional</span> or preloaded fonts where swaps are visible.</p>'
+ +'<table><tr><th>Metric</th><th>Good</th><th>Needs work</th><th>Poor</th></tr><tr><td>LCP</td><td>≤ 2.5s</td><td>2.5–4.0s</td><td>&gt; 4.0s</td></tr><tr><td>INP</td><td>≤ 200ms</td><td>200–500ms</td><td>&gt; 500ms</td></tr><tr><td>CLS</td><td>≤ 0.1</td><td>0.1–0.25</td><td>&gt; 0.25</td></tr></table>'
+ +'<h2>Field data vs lab data</h2><p>PageSpeed Insights shows both. Lab data is a single simulated test — useful for debugging, useless for judging. Field data (the Chrome User Experience Report) is what rankings use: real visits, real devices, real networks, over a rolling 28 days. A page can score 95 in the lab and still fail in the field if your actual audience uses mid-range phones on slow connections — which, globally, most audiences do.</p>'
+ +'<div class="callout"><b class="t">Advertising without wrecking the page</b><p>Ads are a legitimate revenue model and a common CLS/INP disaster. Reserve the exact slot size before the ad loads, lazy-load below-fold units, cap the number of ad scripts, and test the page the way a reader sees it — with ads on. Revenue that destroys readability destroys itself within a quarter.</p></div>'
+ +'<h2>A pragmatic workflow</h2><ol><li>Check the Core Web Vitals report in Search Console; group failures by template, not by page.</li><li>Fix one template, verify with field data over the following weeks.</li><li>Set budgets (LCP image ≤ 150KB, total JS ≤ 300KB compressed as starting points) and enforce them in your publishing process.</li><li>Re-check after every redesign, plugin addition or ad change.</li></ol><p>Speed work is never finished, but it is finishable in passes — and every pass is felt by every reader on every visit.</p>'},
+
+{slug:"schema-markup", cat:"seo", img:"assets/img-code.jpg", alt:"Structured data code with colourful syntax highlighting on a screen", date:"Nov 15, 2026", read:"12 min read",
+ title:"Schema Markup and JSON-LD for Clear Website Identity",
+ excerpt:"Implement structured data for articles, authors, organizations and breadcrumbs without inventing credentials or promising rich results.",
+ body:'<p>Schema markup is a vocabulary you add to a page so machines can stop guessing. Without it, a search engine sees a name and guesses whether it is a person, a company or a place. With structured data, you state it plainly: this is an Article, written by this Person, published by this Organization, sitting under these breadcrumbs. That clarity powers rich results today and feeds the entity understanding that AEO, GEO and AIO all depend on.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>Add JSON-LD structured data that describes what is visibly on the page — Article, BreadcrumbList, Organization, Person and FAQPage where genuine FAQs exist. Use Google\'s recommended properties, keep the data identical to the visible content, and validate it. Schema makes you eligible for rich results; it never guarantees them.</p></div>'
+ +'<h2>Why JSON-LD, and where it goes</h2><p>Google supports three formats; JSON-LD is the recommended one because it lives in a single <span class="mono">&lt;script type="application/ld+json"&gt;</span> block in the head or body, separate from your HTML. That separation makes it easy to generate from your CMS, easy to audit, and hard to break when a template changes. Microdata tangled through markup fails silently; a JSON-LD block either parses or it does not.</p>'
+ +'<h2>The core types most sites need</h2><table><tr><th>Type</th><th>Use it for</th><th>Key properties</th></tr><tr><td>Organization</td><td>Your site/company identity, once, on the homepage or about page</td><td>name, url, logo, sameAs</td></tr><tr><td>Article / BlogPosting</td><td>Every guide and news article</td><td>headline, image, datePublished, dateModified, author</td></tr><tr><td>Person</td><td>Real authors with real profiles</td><td>name, url, jobTitle, sameAs</td></tr><tr><td>BreadcrumbList</td><td>The visible breadcrumb trail</td><td>itemListElement with positions</td></tr><tr><td>FAQPage</td><td>Pages with genuine question-and-answer content</td><td>mainEntity of Question/Answer pairs</td></tr><tr><td>WebSite</td><td>Site identity, optionally search box</td><td>name, url, potentialAction</td></tr></table>'
+ +'<h2>A minimal, honest Article example</h2><p>The example below describes this very kind of page. Notice what it does <i>not</i> contain: no invented ratings, no fake review counts, no credentials the author does not hold.</p><p class="mono" style="font-size:.86rem;background:var(--chip);padding:16px;border-radius:12px;overflow-x:auto;white-space:pre">{\n  "@context": "https://schema.org",\n  "@type": "Article",\n  "headline": "Schema Markup and JSON-LD for Clear Website Identity",\n  "datePublished": "2026-11-15",\n  "author": {"@type": "Organization", "name": "iWriteHub"},\n  "publisher": {"@type": "Organization", "name": "iWriteHub"}\n}</p>'
+ +'<h2>Rules that keep you eligible</h2><ul><li><b>Describe the visible page.</b> Structured data for content users cannot see is spam by definition.</li><li><b>One entity, one identity.</b> Use the same name, URL and logo for your Organization everywhere; inconsistency fragments your entity.</li><li><b>Dates must be real.</b> dateModified should change when the content actually changes, not on a cron job.</li><li><b>FAQ schema only for real FAQs.</b> If the questions are not printed on the page for readers, the markup does not belong there.</li><li><b>Never fabricate social proof.</b> Invented aggregateRating stars are the fastest route to a manual action.</li></ul>'
+ +'<div class="callout"><b class="t">Validate like a sceptic</b><p>Run every template through Google\'s Rich Results Test and the Schema Markup Validator after any change. Zero errors is the bar; warnings deserve a decision, not a shrug. Then watch Search Console\'s enhancement reports — they show which pages Google actually parsed, which is the only count that matters.</p></div>'
+ +'<h2>Schema as infrastructure for the other layers</h2><p>Think of structured data as the plumbing beneath this whole library. AEO uses it to confirm which block is the answer. GEO systems cross-check your stated authorship and dates when deciding whether to cite you. AIO is, in large part, schema thinking applied to everything. Implement it carefully once, at the template level, and every article you publish inherits the clarity.</p>'},
+
+{slug:"eeat-trust", cat:"seo", img:"assets/img-desk.jpg", alt:"Top-down desk with laptop, notebook and coffee during editorial work", date:"Nov 15, 2026", read:"10 min read",
+ title:"E-E-A-T and Trustworthy Publishing",
+ excerpt:"Show real experience, responsible authorship, credible sources and transparent editorial practices while avoiding cosmetic trust claims.",
+ body:'<p>E-E-A-T stands for Experience, Expertise, Authoritativeness and Trust — the qualities Google\'s human quality raters look for when they evaluate search results, and the qualities the ranking systems are trained to approximate. It is not a single ranking factor you can toggle. It is the visible residue of publishing like a real, accountable expert.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>Demonstrate E-E-A-T by showing first-hand experience, naming real authors with verifiable backgrounds, citing credible primary sources, keeping content accurate and updated, and being transparent about who you are and how you work. Trust is the centre of the framework: the other three qualities exist to earn it.</p></div>'
+ +'<h2>Experience: prove you were there</h2><p>The first E — added in 2022 — is the hardest to fake. Experience shows in the details only a practitioner knows: the step that usually goes wrong, the screenshot from the actual tool, the number measured on a real project. When you write about a process, do the process. When you review a product, use the product. Readers smell second-hand summaries instantly, and so do the systems trained on reader behaviour.</p>'
+ +'<h2>Expertise and authorship</h2><p>Put a real name on your articles, with an author page that states the person\'s actual background and links to their other work. Anonymous content from "Admin" or a faceless brand asks readers to trust a stranger. If a topic needs professional credentials — health, finance, law, safety — the author should hold them or the article should be reviewed by someone who does, and should say so.</p>'
+ +'<h2>Authoritativeness: be cited by your field</h2><p>Authority accumulates when other credible sources treat you as a reference: links from relevant sites, mentions in industry discussions, citations in research. You cannot declare it; you earn it by publishing the piece others need to link to — the original data, the definitive walkthrough, the maintained reference table. Our <a href="#article/earning-backlinks">backlinks guide</a> covers the earning process honestly.</p>'
+ +'<h2>Trust: the centre of the framework</h2><table><tr><th>Trust signal</th><th>What readers (and raters) look for</th></tr><tr><td>Accuracy</td><td>Claims match checkable sources; errors get corrected visibly</td></tr><tr><td>Transparency</td><td>Clear About page: who runs the site, how it makes money, how to contact a human</td></tr><tr><td>Honest dates</td><td>Published and updated dates that reflect reality</td></tr><tr><td>Disclosures</td><td>Affiliate links, sponsorships and paid placements labelled</td></tr><tr><td>Security &amp; care</td><td>HTTPS, no deceptive ads, no dark patterns</td></tr><tr><td>Consistency</td><td>The site says the same thing about itself everywhere</td></tr></table>'
+ +'<div class="callout"><b class="t">Cosmetic trust is worse than none</b><p>Stock-photo "team" pages, invented testimonials, badges from organisations you do not belong to, and "as featured in" logos for coverage that never happened are not shortcuts — they are liabilities. The moment a reader catches one fabrication, every true claim on the site becomes suspect. If a trust signal cannot survive a sceptical reader checking it, remove it.</p></div>'
+ +'<h2>A practical E-E-A-T pass for an existing site</h2><ol><li>Add real author bylines and author pages to your top articles.</li><li>Insert one piece of first-hand evidence (data, photo, worked example) into each thin guide.</li><li>Link claims to primary sources instead of other summaries.</li><li>Publish an honest About page and a working contact route.</li><li>Label commercial relationships and correct old errors with a visible note.</li></ol><p>None of this is glamorous. All of it compounds — because E-E-A-T is simply what a trustworthy publisher looks like from the outside.</p>'},
+
+{slug:"earning-backlinks", cat:"seo", img:"assets/img-team.jpg", alt:"Colleagues collaborating around laptops at an office table", date:"Nov 16, 2026", read:"11 min read",
+ title:"Earning Relevant Backlinks Without Link Spam",
+ excerpt:"Understand external links, editorial relevance, paid-link disclosures and realistic outreach without buying ranking promises or manufacturing authority.",
+ body:'<p>Backlinks remain one of the clearest signals that a page matters: another site, spending its own credibility, points its readers to you. They are also the most abused signal in SEO history, which is why search engines have become ruthless about discounting — and sometimes penalising — links that were bought, exchanged or manufactured instead of earned.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>Earn backlinks by publishing things worth citing — original research, definitive guides, useful tools, clear data — and by telling the right people those resources exist. A handful of relevant, editorial links from real sites in your field outweigh hundreds of paid or directory links, which at best do nothing and at worst trigger spam actions.</p></div>'
+ +'<h2>What makes a link valuable</h2><ul><li><b>Relevance:</b> the linking site covers your subject or a neighbouring one.</li><li><b>Editorial choice:</b> a human editor added it because it helps their readers.</li><li><b>Placement:</b> inside the main content, surrounded by related text — not in a footer, sidebar or link farm.</li><li><b>Real traffic:</b> the linking page itself is indexed and read.</li><li><b>Natural anchors:</b> varied, descriptive anchor text written for readers.</li></ul><p>Notice what is missing from that list: the raw count. Link quality is a judgement about context, and it is why "1,000 backlinks for $50" offers are selling confetti.</p>'
+ +'<h2>Assets that earn links on their own merits</h2><table><tr><th>Asset</th><th>Why people link to it</th></tr><tr><td>Original research &amp; data</td><td>It is the primary source; citing anyone else is second-hand</td></tr><tr><td>Free tools &amp; calculators</td><td>Bloggers and teachers link utilities their readers can use</td></tr><tr><td>Definitive guides</td><td>Writers link the reference instead of re-explaining a topic</td></tr><tr><td>Statistics roundups (honestly sourced)</td><td>Journalists need citable numbers with visible methods</td></tr><tr><td>Visual explainers</td><td>Diagrams get embedded — with a link — across the web</td></tr></table>'
+ +'<h2>Outreach that respects the other editor</h2><p>Outreach works when it is genuinely useful to the person receiving it. Study their site, reference the exact page where your resource improves their readers\' experience, explain the benefit in two sentences, and make "no" easy. Personal, relevant, brief. Mass templates, flattery scripts and follow-up harassment are why editors delete pitches unread — and why the channel keeps getting harder for everyone.</p>'
+ +'<h2>The lines you do not cross</h2><ul><li><b>Paid links that pass ranking credit</b> violate Google\'s spam policies; sponsored placements must use <span class="mono">rel="sponsored"</span> or <span class="mono">nofollow</span> and be disclosed to readers.</li><li><b>Link exchanges</b> ("you link me, I link you") at scale are manipulation, not networking.</li><li><b>Private blog networks</b> and expired-domain schemes are detectable and burn entire sites when they fall.</li><li><b>Comment, forum and profile spam</b> wastes your time and stains your brand.</li></ul>'
+ +'<div class="callout"><b class="t">Measure links like a publisher</b><p>Track referring domains in your niche, whether linking pages send real visitors, and whether your cited assets keep attracting links without new outreach. A link profile that grows because your library keeps improving is the only kind that survives every spam update — because it was never spam.</p></div>'
+ +'<p>Backlinks are the last SEO layer to work on, not the first: they amplify authority that your foundations, content and structure have already created. Earn the page first — the links follow evidence.</p>'},
+
+/* ================= AEO ================= */
+{slug:"aeo-basics", cat:"aeo", img:"assets/img-phone.jpg", alt:"Hand holding a smartphone with a colourful glowing display", date:"Nov 6, 2026", read:"10 min read",
+ title:"AEO Content That Answers Real Questions",
+ excerpt:"Align your visible content, data and editorial process so people and AI systems can interpret the same reliable information — without turning articles into shallow FAQs.",
+ body:'<p>Answer Engine Optimization begins with a shift in what a "result" is. Increasingly, the searcher never sees a list of links first — they see an answer: a featured snippet, an AI Overview, a voice response read aloud. AEO is the discipline of making your content the material those answers are built from.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>AEO means structuring content so it can be lifted as a direct answer: ask the real question as a heading, answer it completely in the first 40–58 words, then support the answer with steps, lists, tables and evidence. Pages that answer clearly get quoted; pages that circle the topic get skipped.</p></div>'
+ +'<h2>How answer engines choose their material</h2><p>Answer systems — Google\'s featured snippets and AI Overviews, voice assistants, chatbots with browsing — all follow a similar pipeline: retrieve candidate pages, extract the passage that best matches the question, then present or synthesise it. You cannot control the synthesis, but you absolutely control the extraction step. Passages win extraction when they are <b>self-contained</b> (understandable without the surrounding page), <b>direct</b> (the answer is the first thing said), and <b>verifiable</b> (consistent with other trusted sources).</p>'
+ +'<h2>The anatomy of an answerable page</h2><ol><li><b>Question-shaped headings.</b> "How long does a technical audit take?" as an H2 tells the extractor exactly what the following text resolves.</li><li><b>Answer-first paragraphs.</b> State the answer, then explain. Never open with background, history or throat-clearing.</li><li><b>Structured support.</b> Steps as numbered lists, comparisons as tables, definitions as one or two clean sentences.</li><li><b>Named entities.</b> Use the full, consistent names of products, standards and organisations so machines can resolve references.</li><li><b>Honest scope.</b> State conditions and exceptions inside the answer block; extracted text that overpromises gets contradicted and dropped.</li></ol>'
+ +'<h2>AEO is not "turn everything into FAQs"</h2><p>The failure mode of early AEO advice was chopping articles into shallow question confetti: forty two-line answers that help nobody and read like a content farm. Answer engines increasingly detect and ignore that pattern, and human readers bounce from it. The durable approach is the one this library uses: full, long-form articles in which each section happens to open with a complete answer. Depth earns the trust; the answer-first structure earns the extraction.</p>'
+ +'<table><tr><th>Element</th><th>Shallow AEO</th><th>Durable AEO</th></tr><tr><td>Answer length</td><td>One vague sentence</td><td>Complete answer in 40–58 words</td></tr><tr><td>After the answer</td><td>Nothing — next question</td><td>Steps, evidence, examples, caveats</td></tr><tr><td>Questions chosen</td><td>Whatever a tool lists</td><td>What your real readers ask</td></tr><tr><td>Voice</td><td>Keyword-shaped</td><td>Plain, expert, specific</td></tr></table>'
+ +'<div class="callout"><b class="t">Test your own pages</b><p>Take your most important article and read only the first paragraph under each heading. If a stranger could assemble a correct, useful summary from those paragraphs alone, your AEO structure is working. If they would assemble confusion, rewrite the openings — the rest of the article can stay exactly as it is. Use the <a href="#toolkit">readiness checker</a> in our toolkit to measure answer length as you edit.</p></div>'
+ +'<h2>Where AEO leads</h2><p>Winning the answer changes your economics: some clicks disappear (the answer satisfied the need), but brand exposure, trust and high-intent visits grow. Measure AEO by presence — how often you are the cited or quoted source for your key questions — not only by sessions. The next guides go deeper: the <a href="#article/direct-answer-window">direct-answer window</a> and <a href="#article/faq-schema-guide">FAQ structure and schema</a>.</p>'},
+
+{slug:"direct-answer-window", cat:"aeo", img:"assets/img-typing.jpg", alt:"Close-up of hands typing an answer on a laptop keyboard", date:"Nov 16, 2026", read:"9 min read",
+ title:"Writing Clear Answers for Featured Snippets and AI Overviews",
+ excerpt:"Answer the search task clearly while respecting the limits of snippet eligibility, answer clarity and control — with the 40–58 word window explained.",
+ body:'<p>Featured snippets and AI Overviews share a mechanical preference: they need a passage that answers a question completely, briefly, and without depending on the rest of the page. Decades of snippet data point to a practical sweet spot for paragraph answers — roughly <b>40 to 58 words</b>. This guide explains how to write inside that window without mangling your meaning.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>A direct answer states the complete answer to one question in about 40–58 words, in the first paragraph under a question-shaped heading. It names the subject, gives the key fact or steps in miniature, and adds the one condition that matters most. Supporting detail belongs after the answer, not inside it.</p></div>'
+ +'<h2>Why the window exists</h2><p>Snippet boxes and voice answers have hard physical limits: a few lines on a screen, a few seconds spoken aloud. Below about 40 words, answers usually omit a necessary condition and mislead. Above about 58, they get truncated mid-thought or lose extraction to a tighter competitor. The window is not a ranking rule — it is the shape of the container your answer must fit. (List and table snippets follow their own logic; this guide covers the paragraph format.)</p>'
+ +'<h2>The four-part answer formula</h2><ol><li><b>Restate the subject.</b> Begin with the thing itself: "A canonical tag is…" — extracted text must make sense with no heading above it.</li><li><b>Give the core fact.</b> The definition, number, verdict or first steps — the part the searcher came for.</li><li><b>Add the critical condition.</b> "…provided the destination returns a 200 and is indexable." Conditions are what separate trustworthy answers from lucky guesses.</li><li><b>Stop.</b> The explanation, examples and exceptions start in the next paragraph.</li></ol>'
+ +'<h2>A worked example</h2><p>Question: <i>How often should you run a technical SEO audit?</i></p><p style="background:var(--chip);padding:16px;border-radius:12px">"Run a full technical SEO audit quarterly for most websites, monthly for large or fast-changing sites, and immediately after any redesign, migration or CMS change. Between audits, monitor index coverage and server errors weekly so urgent problems never wait for the next scheduled review." — 44 words: subject, schedule, condition, and a supporting practice, all extractable as one block.</p>'
+ +'<h2>Common ways answers fail extraction</h2><ul><li><b>The wind-up:</b> "In today\'s digital landscape, many people wonder…" — twelve words spent, zero answered.</li><li><b>The pronoun trap:</b> "It depends on several factors" — extracted alone, "it" refers to nothing.</li><li><b>The split answer:</b> the fact is in paragraph one, the condition in paragraph four; the extractor takes one and misleads.</li><li><b>The brand insert:</b> "At our agency, we believe…" — answer engines strip or skip self-referential text.</li><li><b>The stale number:</b> precise figures without dates decay into misinformation; date your facts or phrase them durably.</li></ul>'
+ +'<div class="callout"><b class="t">Eligibility is not entitlement</b><p>Even a perfect answer may not be selected: the source page must be indexed, trusted and relevant, and Google may prefer a list, a table, a video or a different page entirely. Write answers because they serve readers first — extraction is the bonus. Never thin out a full guide to chase a snippet; answer-first structure on complete articles wins more, for longer.</p></div>'
+ +'<p>Measure your drafts with the <a href="#toolkit">SERP Title &amp; Direct-Answer Readiness Checker</a>: paste your opening paragraph and it counts the words and scores the fit instantly.</p>'},
+
+{slug:"faq-schema-guide", cat:"aeo", img:"assets/img-desk.jpg", alt:"Workspace with laptop and notebook used for drafting FAQ content", date:"Nov 17, 2026", read:"10 min read",
+ title:"Creating Useful FAQ Content for Search and AI Answers",
+ excerpt:"Design FAQ sections with real questions, answer clarity and measurement — without special-file promises or guaranteed citation claims.",
+ body:'<p>FAQ sections are the most copied and least considered format in content marketing. Done well, they resolve the real objections and edge cases your main article could not hold. Done badly, they are keyword bait that readers skip and search engines increasingly ignore. This guide covers the difference — and the honest role of FAQ schema.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>Build FAQ sections from questions your audience genuinely asks, answer each one completely in two to five sentences, and place them where the questions naturally arise. Add FAQPage schema only when the identical questions and answers are visible on the page, and expect eligibility — not guaranteed rich results or AI citations.</p></div>'
+ +'<h2>Source questions from reality</h2><p>Good FAQ questions come from evidence: support tickets, sales calls, comments, search queries your pages already attract, and the "what about…" moments in your own drafting. Bad ones come from keyword tools alone — questions nobody asks, written to contain a phrase. A useful test: if a customer asked you this across a counter, would you answer with a straight face? If the question only exists for search engines, delete it.</p>'
+ +'<h2>Write answers that end the question</h2><ul><li><b>Answer in the first sentence.</b> "Yes — provided the battery is removable" beats three sentences of context before the verdict.</li><li><b>Keep one question per answer.</b> Compound answers confuse readers and extractors alike.</li><li><b>Link onward sparingly.</b> If the full answer needs a guide, summarise honestly and link — do not make the FAQ a teaser farm.</li><li><b>Maintain them.</b> FAQs rot fastest because they contain your most specific claims. Review them with the parent article.</li></ul>'
+ +'<h2>The truth about FAQ schema in 2026</h2><p>Google restricted FAQ rich results in 2023: the expandable FAQ display in search results is now largely limited to well-known government and health authority sites. For most publishers, FAQPage markup no longer produces the visual rich result it once did. That does not make structured FAQ content useless — clear Q&amp;A structure still helps answer engines parse your page, and the markup accurately describes your content — but anyone promising you FAQ rich results or guaranteed AI citations from schema alone is selling you 2021. Implement it for clarity, measure honestly, and let the content do the persuading.</p>'
+ +'<table><tr><th>Claim you may hear</th><th>Reality</th></tr><tr><td>"FAQ schema guarantees a rich result"</td><td>Eligibility only — and display is now restricted for most sites</td></tr><tr><td>"More FAQs = more rankings"</td><td>Irrelevant questions dilute the page and waste reader trust</td></tr><tr><td>"Hide FAQs, keep the schema"</td><td>Markup must match visible content; hidden Q&amp;A violates guidelines</td></tr><tr><td>"FAQs replace real content"</td><td>FAQs support a complete article; they are not one</td></tr></table>'
+ +'<div class="callout"><b class="t">Placement beats volume</b><p>Five questions at the exact point of doubt — pricing FAQs beside pricing, setup FAQs inside the setup guide — outperform fifty questions warehoused on a single FAQ page nobody visits. Distribute questions to where they arise; keep a central FAQ page only for site-wide topics like billing, access and policies.</p></div>'
+ +'<p>On iWriteHub, the <a href="#faq">FAQ page</a> sticks to site-wide questions, while topic questions live inside the guides themselves — the same structure we recommend to you.</p>'},
+
+/* ================= GEO ================= */
+{slug:"geo-citations", cat:"geo", img:"assets/img-analytics.jpg", alt:"Analytics dashboard showing traffic and citation-style metrics", date:"Nov 8, 2026", read:"11 min read",
+ title:"GEO Content That Earns Relevant Citations",
+ excerpt:"Prepare clear, evidence-backed content for generative discovery while keeping citation claims and measurement grounded in reality.",
+ body:'<p>When someone asks ChatGPT, Gemini or Perplexity a question, the answer is composed on the spot — and increasingly, it names its sources. Generative Engine Optimization is about becoming one of those sources: the page an AI system retrieves, trusts and cites when it builds an answer in your topic.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>GEO works by making your content easy for AI systems to retrieve, verify and quote: clear factual statements, original evidence, consistent entity information, visible authorship and dates, and structure that lets a model extract a claim with its context intact. There is no citation guarantee — only content that deserves one.</p></div>'
+ +'<h2>How generative answers pick sources</h2><p>Most AI answer systems combine a trained model with live retrieval: your page is found, chunked, ranked for relevance and authority, and either quoted, paraphrased or ignored. Three properties decide your fate in that pipeline. <b>Retrievability</b> — the page is crawlable, fast and clearly about the query. <b>Extractability</b> — claims are stated in complete, self-contained sentences with their evidence nearby. <b>Trustworthiness</b> — the claim agrees with other credible sources, or carries primary evidence strong enough to stand alone.</p>'
+ +'<h2>Write claims a model can lift safely</h2><ul><li><b>One claim per sentence.</b> Compound sentences get split wrongly; give each fact its own clean statement.</li><li><b>Attach numbers to methods.</b> "In our test of 40 product pages, titles under 580px displayed fully in 96% of checks" can be cited; "most titles get cut off" cannot.</li><li><b>Name entities fully.</b> First mention in full — organisation, product, standard — then abbreviate. Models resolve entities, not vibes.</li><li><b>Date your evidence.</b> AI systems prefer sources that know their own age.</li><li><b>Keep the claim and its proof adjacent.</b> A statistic in paragraph one defended in paragraph nine will be quoted without its caveats.</li></ul>'
+ +'<h2>What GEO is not</h2><p>It is not a new schema type, a special file, or a keyword density. Files like llms.txt are proposals with uneven adoption — harmless to add, useless to rely on. Nor can any agency guarantee citations: the systems choose sources per query, per model, per day. Anyone selling guaranteed AI placement is selling the same snake oil the SEO industry spent a decade unlearning.</p>'
+ +'<table><tr><th>GEO signal</th><th>Strong version</th><th>Weak version</th></tr><tr><td>Evidence</td><td>Original test with method and date</td><td>"Studies show…" with no study</td></tr><tr><td>Attribution</td><td>Named author, organisation, credentials</td><td>Anonymous, undated content</td></tr><tr><td>Consistency</td><td>Same facts across your whole site</td><td>Three pages, three different numbers</td></tr><tr><td>Structure</td><td>Headings, lists, tables, answer-first</td><td>Unbroken prose, buried claims</td></tr><tr><td>Freshness</td><td>Maintained and honestly re-dated</td><td>Abandoned after publication</td></tr></table>'
+ +'<div class="callout"><b class="t">Measure presence, not promises</b><p>Track a fixed set of 20–30 questions your buyers actually ask. Monthly, put them to the major AI assistants and record: were you cited, quoted, mentioned, or absent — and which competitors appeared instead? That log, kept honestly over quarters, is the only GEO dashboard that means anything today.</p></div>'
+ +'<p>GEO rewards the same virtues as every other layer in this library — clarity, evidence, maintenance — pointed at a new audience of machines that read on behalf of humans. The strongest GEO asset you can build is the subject of the next guide: <a href="#article/original-research">original research readers can check</a>.</p>'},
+
+{slug:"original-research", cat:"geo", img:"assets/img-desk.jpg", alt:"Desk with laptop, notebook and coffee used while preparing a research report", date:"Nov 17, 2026", read:"11 min read",
+ title:"Publishing Original Research Readers Can Check",
+ excerpt:"Design small, useful studies with transparent methods, honest limitations and citations that preserve what the evidence actually shows.",
+ body:'<p>Original research is the most citable content a site can own. When your page is the primary source — the place a number was actually measured — writers, journalists and AI systems must come to you to cite it. You do not need a laboratory or a grant. You need a good question, a transparent method, and the discipline to report what you found rather than what you hoped.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>Publish original research by testing a specific question on a defined sample, describing your method so others could repeat it, presenting results in tables with exact numbers, and stating limitations plainly. Small honest studies earn durable citations; large vague ones earn scepticism.</p></div>'
+ +'<h2>Choose a question your audience already argues about</h2><p>The best small studies settle a live debate in your niche: Do longer guides actually get cited more? Which title format survives truncation? How fast are typical sites in your industry, really? Pick a question where practitioners currently rely on folklore. Your study does not need to be the final word — it needs to be the first real measurement.</p>'
+ +'<h2>Design the smallest honest method</h2><ol><li><b>Define the sample.</b> Exactly what you measured, how you selected it, and what you excluded — in numbers.</li><li><b>Fix the procedure before looking at results.</b> Write the steps down first; changing the method mid-study to rescue a conclusion is how research becomes marketing.</li><li><b>Record raw results.</b> Keep the underlying data; publish as much of it as you can.</li><li><b>Compute simply.</b> Counts, percentages, medians. A clear median beats a suspicious model.</li><li><b>Note what surprised you.</b> Unexpected results are the most credible sentences in any report.</li></ol>'
+ +'<h2>Present it for citation</h2><table><tr><th>Element</th><th>Why citers need it</th></tr><tr><td>One-sentence headline finding</td><td>The quotable claim, stated precisely</td></tr><tr><td>Method box (sample, dates, tools)</td><td>Lets others judge and repeat the work</td></tr><tr><td>Results tables with exact figures</td><td>Numbers that can be lifted without distortion</td></tr><tr><td>Limitations section</td><td>Signals honesty; protects citers from overclaiming</td></tr><tr><td>Stable URL and update log</td><td>A citation target that will still exist next year</td></tr></table>'
+ +'<div class="callout"><b class="t">Limitations are a feature</b><p>"Our sample covers English-language sites only, measured on weekdays in October" does not weaken your study — it is what separates research from advertising. AI systems and journalists alike have learned to discount sources that claim universal truth from convenient samples. State your boundaries and your findings become safe to cite.</p></div>'
+ +'<h2>Maintain the asset</h2><p>Research compounds when it is repeated: re-run the study annually, keep the same method, and publish the trend. Last year\'s number becomes this year\'s context, and your page becomes the standing reference for the question. That is topical authority, GEO presence and backlink earning delivered by a single honest habit.</p>'},
+
+/* ================= AIO ================= */
+{slug:"aio-foundations", cat:"aio", img:"assets/img-code.jpg", alt:"Code on a screen representing machine-readable page structure", date:"Nov 9, 2026", read:"10 min read",
+ title:"AIO Foundations for Clear Machine-Readable Content",
+ excerpt:"Align your visible content, data and editorial process so people and AI systems interpret the same reliable information.",
+ body:'<p>AI Optimization starts from an uncomfortable observation: machines now read your site before most humans do. Crawlers, answer engines, shopping assistants and research agents all parse your pages and form a model of what you say, sell and stand for. AIO is the discipline of making that machine reading <i>accurate</i> — so the AI\'s version of you matches the real one.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>AIO foundations are: one consistent identity for every entity you mention, clean semantic HTML structure, visible content that matches your structured data, text that states facts explicitly instead of implying them, and media with real text alternatives. If a machine cannot misread it, you are doing AIO.</p></div>'
+ +'<h2>Implication is where machines fail</h2><p>Human readers fill gaps with context; language models fill them with probability. "Our flagship model" means nothing to a system that cannot tell which product is flagship. "Prices from $49" attached to no product name, in an image, under a heading that says "Plans" — a human guesses correctly, a machine guesses statistically. AIO writing removes the need to guess: name the subject in the sentence, put the number in text, and keep related facts in the same block.</p>'
+ +'<h2>The four foundations</h2><ol><li><b>Semantic structure.</b> Real headings in order, lists as lists, tables as tables, one topic per page. Structure is the cheapest machine-readability there is.</li><li><b>Entity consistency.</b> Your organisation, authors and products carry the same name, spelling and description everywhere — site, schema, profiles, documents. (The next guide goes deep on <a href="#article/entities-knowledge-graphs">entities and knowledge graphs</a>.)</li><li><b>Visible–structured parity.</b> Whatever your JSON-LD claims, the page visibly says. Divergence reads as deception to validators and models alike.</li><li><b>Explicit facts.</b> Dates, prices, specifications, locations and relationships written as plain statements, not scattered across images and hover text.</li></ol>'
+ +'<h2>Documents and media count too</h2><p>AI systems read your PDFs, images and videos, not just your HTML. A price list locked in an untagged PDF image is invisible; the same list as text with a proper heading is knowledge. Our <a href="#article/media-for-ai">media guide</a> covers alt text, captions, transcripts and document hygiene in detail.</p>'
+ +'<table><tr><th>Content habit</th><th>Human sees</th><th>Machine sees</th></tr><tr><td>Price inside an image</td><td>The price</td><td>Nothing (or an OCR guess)</td></tr><tr><td>"Click here" links</td><td>A link</td><td>No destination meaning</td></tr><tr><td>Facts split across tabs</td><td>Everything, eventually</td><td>Often only the default tab</td></tr><tr><td>Consistent naming + schema</td><td>Normal page</td><td>A resolvable entity with attributes</td></tr></table>'
+ +'<div class="callout"><b class="t">The AIO audit question</b><p>For each important page, ask: "If an AI summarised this page to a customer, what could it get wrong?" Every answer is an AIO task — an unnamed product, an undated claim, a fact trapped in an image, a contradiction with another page. Fix the misreading at the source and every downstream system improves at once.</p></div>'
+ +'<p>AIO is not a separate campaign. It is a quality bar applied to everything the other layers produce — which is why it sits between GEO and SXO in this library: understood correctly first, experienced well second.</p>'},
+
+{slug:"entities-knowledge-graphs", cat:"aio", img:"assets/img-dashboard.jpg", alt:"Dashboard visualising connected metrics and entities", date:"Nov 18, 2026", read:"11 min read",
+ title:"Semantic Entities and Knowledge Graphs Explained",
+ excerpt:"Use consistent names, explicit relationships and accurate structured data to make people, organizations and concepts easier to interpret.",
+ body:'<p>Search engines and AI systems do not store the web as pages; they store it as <b>entities</b> — distinct things (a person, a company, a product, a concept) connected by relationships — in what is called a knowledge graph. When your content names entities consistently and states their relationships plainly, machines can file you correctly. When it does not, you get merged, split or confused with someone else.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>An entity is a uniquely identifiable thing — a person, organisation, place, product or concept — described by its attributes and relationships. Help machines by using one consistent name per entity, linking it to its authoritative profiles, stating relationships in plain sentences, and mirroring the same facts in structured data.</p></div>'
+ +'<h2>Why entities replaced keywords</h2><p>Keyword systems match strings; entity systems match meanings. "Apple" the company, the fruit and the record label share a string and nothing else. A knowledge graph separates them by context and relationships: founded-by, headquartered-in, produces. Your pages participate in this graph whether you plan for it or not — every mention either sharpens or blurs your entities. AIO is simply participating deliberately.</p>'
+ +'<h2>The consistency rules</h2><ul><li><b>One canonical name.</b> Decide how your organisation and products are named and use exactly that, everywhere — site, schema, social profiles, press mentions. Nicknames and abbreviations come after the full name is established.</li><li><b>One canonical URL per entity.</b> The About page is your organisation\'s home; the author page is the person\'s. Link other mentions to them.</li><li><b>sameAs links.</b> In structured data, point to the entity\'s official profiles (social, directories, Wikipedia/Wikidata where they genuinely exist) so systems can merge records confidently.</li><li><b>State relationships in sentences.</b> "iWriteHub is published by…" / "This guide was written by…, who also wrote…" — prose relationships are training data for the graph.</li></ul>'
+ +'<h2>A worked example: the author entity</h2><table><tr><th>Signal</th><th>Blurred version</th><th>Sharp version</th></tr><tr><td>Byline</td><td>"Admin" / rotating pen names</td><td>One real name, used on every article</td></tr><tr><td>Author page</td><td>Missing</td><td>Bio, role, article list, profile links</td></tr><tr><td>Schema</td><td>Organisation as author for everything</td><td>Person entity with sameAs to real profiles</td></tr><tr><td>Off-site</td><td>Profiles with different names/photos</td><td>Matching name and description everywhere</td></tr></table>'
+ +'<div class="callout"><b class="t">Disambiguation is a gift you give yourself</b><p>If your brand shares a name with another company, say so plainly and differentiate: different industry, different location, founded in a different year — stated on your About page and in your Organization schema. Machines resolve ambiguity with whatever facts exist; make sure the distinguishing facts are yours and are findable.</p></div>'
+ +'<h2>Concepts are entities too</h2><p>Your topics form a small knowledge graph of their own. On this site, "AEO" is defined once, canonically, in its pillar material, and every other mention links back to that definition. Do the same for your field\'s key terms: define them in one authoritative place, use the terms consistently, and interlink. You are, quite literally, teaching the graph your vocabulary — and it is an attentive student.</p>'},
+
+{slug:"media-for-ai", cat:"aio", img:"assets/img-pencils.jpg", alt:"Row of sharpened coloured pencils representing visual media assets", date:"Nov 18, 2026", read:"10 min read",
+ title:"Making Images, Videos and Documents Easier to Understand",
+ excerpt:"Publish accessible visual and document content with text alternatives, clear labels, manageable file sizes and an update process that prevents contradictions.",
+ body:'<p>A growing share of what AI systems "know" about a site comes from its media: the images illustrating your products, the videos demonstrating them, the PDFs specifying them. Media published carelessly is media misread — or skipped entirely. This guide is the hygiene that makes visual and document content legible to machines and to the many humans who rely on text alternatives.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>Make media understandable by pairing every meaningful image with descriptive alt text and a caption, every video with a transcript, and every document with a real text layer and descriptive title. Keep file names descriptive, sizes reasonable, and facts in media consistent with the facts in your text.</p></div>'
+ +'<h2>Images: alt text is a translation, not a tag</h2><p>Alt text exists so the image\'s information survives without the image — for screen readers, broken connections and machine readers alike. Write what the image <i>conveys</i>: "Line chart: organic sessions rose 22% between May and October" — not "chart image" and never a keyword list. Decorative images get empty alt (<span class="mono">alt=""</span>) so assistive tech skips them. Add captions when the image carries a claim: the caption is where context, dates and sources live, and it is fully machine-readable.</p>'
+ +'<h2>Video: the transcript is the content</h2><p>To a machine, an untranscribed video is a title and a thumbnail. Publish a full transcript on the page (or accurate captions at minimum), give the video a descriptive title and description, and state its key facts in the surrounding text. This is not extra work for SEO\'s sake — it is the difference between your demonstration existing in AI answers and not existing at all. It is also, not incidentally, what deaf and hard-of-hearing viewers need.</p>'
+ +'<h2>Documents: PDFs are pages too</h2><ul><li><b>Real text, not scans.</b> Export PDFs with a selectable text layer; scanned images of text are dead ends.</li><li><b>Set the document title</b> in the PDF metadata — it is what systems display and cite.</li><li><b>Use headings and reading order</b> in the source document so extraction follows your logic.</li><li><b>One canonical version.</b> Five versions of a price list across your site guarantees machines quote the wrong one. Retire old files or redirect them.</li><li><b>Match the web page.</b> If the PDF says 2025 prices and the page says 2026, you have published a contradiction; consistency checks belong in your update process.</li></ul>'
+ +'<table><tr><th>Media</th><th>Machine needs</th><th>Human bonus</th></tr><tr><td>Image</td><td>Alt text, caption, descriptive filename</td><td>Accessibility, context</td></tr><tr><td>Video</td><td>Transcript, title, description, chapters</td><td>Accessibility, skimmability</td></tr><tr><td>PDF</td><td>Text layer, title metadata, headings</td><td>Searchable, printable, citable</td></tr><tr><td>Chart</td><td>Data table or text summary beside it</td><td>Verifiable numbers</td></tr></table>'
+ +'<div class="callout"><b class="t">The chart rule</b><p>Every chart should travel with its data: a small table or a sentence stating the key figures. Charts are persuasive precisely because numbers are embedded in them — which is exactly why leaving the numbers only in pixels guarantees they will be misquoted, rounded wrongly, or ignored.</p></div>'
+ +'<p>None of this requires new tools — only the editorial decision that media is content, held to the same standard of clarity as your paragraphs. Make that decision once, in your publishing checklist, and every asset you ship becomes readable by everyone and everything.</p>'},
+
+/* ================= SXO ================= */
+{slug:"sxo-basics", cat:"sxo", img:"assets/img-team.jpg", alt:"Team reviewing a website experience together on laptops", date:"Nov 11, 2026", read:"10 min read",
+ title:"SXO for Better Search Experiences",
+ excerpt:"Connect search intent, mobile usability and trustworthy conversion paths so a click leads to a genuinely better experience.",
+ body:'<p>Search Experience Optimization is the layer where rankings turn into revenue — or evaporate. A visitor arrives with the intent your page promised to serve. Everything that happens next — the speed, the layout, the clarity, the honesty of the offer — decides whether that visit becomes a customer, a subscriber, a citation, or a back-button click that teaches search engines your result disappoints.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>SXO means designing the landing experience to complete the searcher\'s task: the page loads fast, matches the intent that earned the click, presents the answer and the offer in a clear order, and asks for action honestly at the moment of readiness. It is measured by completed tasks, not by clicks or time-on-page tricks.</p></div>'
+ +'<h2>Intent does not end at the click</h2><p>Every query carries a job: learn, compare, buy, fix, find. Your title and snippet made a promise about that job; the landing page must keep it in the first screen. A searcher who asked "how to descale a kettle" and lands on a product catalogue with a pop-up has been betrayed in four seconds — and behaves accordingly. Audit your top landing pages by re-reading the queries that bring traffic and asking whether the first screen answers them.</p>'
+ +'<h2>The experience stack</h2><ol><li><b>Speed:</b> the Core Web Vitals budgets from our <a href="#article/core-web-vitals">SEO guide</a> — SXO inherits them as a floor, not a goal.</li><li><b>Clarity:</b> one primary message per page, stated in the headline, in the reader\'s language.</li><li><b>Scannability:</b> headings, short paragraphs, visuals that explain — the article craft from our helpful-content guide, applied to landing pages.</li><li><b>Trust at the point of ask:</b> real reviews, clear pricing, honest guarantees, visible contact routes — beside the form, not buried in a policy page.</li><li><b>A single obvious next step:</b> one primary call to action, repeated at natural decision points.</li></ol>'
+ +'<h2>What SXO refuses to do</h2><ul><li>Fake urgency, countdown timers that reset, and "only 2 left" fiction.</li><li>Interstitials that block the promised content on arrival.</li><li>Pre-ticked boxes, disguised ads and confirm-shaming buttons.</li><li>Optimising for time-on-page by hiding information across forced pagination.</li></ul><p>These tactics can lift a metric for a month. They tax every layer beneath SXO — trust signals, return visits, citations, brand searches — and the tax always comes due.</p>'
+ +'<div class="callout"><b class="t">The SXO review</b><p>Pick your five highest-traffic landing pages. On a mid-range phone, on a real connection, complete the task each page exists for, start to finish, as a stranger. Time it, note every moment of confusion or doubt, and fix the worst one first. This one-hour exercise finds more revenue than a month of dashboard archaeology.</p></div>'
+ +'<p>SXO closes the loop this library opened with crawling: a page that is findable, answerable, citable, understandable — and finally, worth landing on. The remaining guides cover its two sharpest tools: <a href="#article/mobile-ux-reading">mobile reading experience</a> and <a href="#article/cta-conversion">honest calls to action</a>.</p>'},
+
+{slug:"mobile-ux-reading", cat:"sxo", img:"assets/img-phone.jpg", alt:"Person holding a smartphone with a bright colourful screen", date:"Nov 19, 2026", read:"10 min read",
+ title:"Mobile UX That Makes Articles Comfortable to Read",
+ excerpt:"Design content, navigation, touch targets and page structure for real reading tasks instead of merely shrinking a desktop layout.",
+ body:'<p>For most sites, the majority of readers arrive on a phone — on a train, on a sofa, on a connection that fluctuates. Mobile UX for articles is not "the desktop page, smaller". It is a distinct reading environment with its own rules, and honouring them is the difference between an article that gets finished and one that gets abandoned at the second paragraph.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>Make articles comfortable on phones with a readable text size (at least 16px), generous line height, short paragraphs, descriptive headings every few hundred words, touch targets of at least 44px, no layout-shifting ads, and navigation that never traps the reader. Design for the phone first; the desktop version is the adaptation.</p></div>'
+ +'<h2>Typography is the interface</h2><p>On a small screen, type does nearly all the work. Body text below 16px forces zooming and signals "we did not think about you". Line height around 1.6–1.75 and a line length of roughly 40–60 characters keep the eye\'s return sweep short. Paragraphs of two to four sentences give the scroll a rhythm; a 15-line block on mobile is a wall, whatever it is on desktop.</p>'
+ +'<h2>Structure for thumbs and glances</h2><ul><li><b>Headings as signposts:</b> a reader scrolling at speed navigates by headings alone; make each one a conclusion, not a label.</li><li><b>Front-load sections:</b> the answer-first structure from our AEO guides doubles as mobile kindness.</li><li><b>Tables that behave:</b> wide tables must scroll within their own container or reflow into stacked rows — never push the whole page sideways.</li><li><b>Sticky elements with restraint:</b> one slim sticky header is help; a sticky header plus sticky ad plus sticky banner is a letterbox.</li><li><b>Touch targets ≥ 44px,</b> including links inside text blocks and accordion headers — fingers are not cursors.</li></ul>'
+ +'<h2>Ads and embeds on small screens</h2><p>Advertising is where mobile reading goes to die: slots that load late and shove text down mid-sentence, full-screen interstitials on arrival, video that autoplays over the paragraph being read. Reserve fixed space for every slot, lazy-load below-fold units, and read your own articles with ads enabled, on a phone, monthly. If you would not tolerate the experience, neither will your readers — or the engagement signals that follow them.</p>'
+ +'<table><tr><th>Element</th><th>Comfortable</th><th>Hostile</th></tr><tr><td>Body text</td><td>16–18px, 1.6+ line height</td><td>13–14px, tight leading</td></tr><tr><td>Paragraphs</td><td>2–4 sentences</td><td>Full-screen blocks</td></tr><tr><td>Tap targets</td><td>≥ 44px with spacing</td><td>Dense link clusters</td></tr><tr><td>Images</td><td>Full-width, sized, lazy below fold</td><td>Oversized, layout-shifting</td></tr><tr><td>Pop-ups</td><td>Delayed, dismissible, once</td><td>On arrival, hard to close</td></tr></table>'
+ +'<div class="callout"><b class="t">Test on the device your readers own</b><p>Not the flagship in the design studio — a mid-range Android on a throttled connection, in bright light, one-handed. If the article is comfortable there, it is comfortable everywhere. This is also, not coincidentally, the environment Google uses for mobile-first indexing and field performance data.</p></div>'
+ +'<p>Mobile comfort is a ranking strategy, a citation strategy and a revenue strategy wearing one coat: readers finish, share and return to pages that respect the device in their hand.</p>'},
+
+{slug:"cta-conversion", cat:"sxo", img:"assets/img-analytics.jpg", alt:"Analytics dashboard used to measure conversions honestly", date:"Nov 19, 2026", read:"10 min read",
+ title:"Clear Calls to Action and Useful Conversion Measurement",
+ excerpt:"Choose honest CTAs, reduce form friction and evaluate leads or sales with measurements that distinguish clicks from completed outcomes.",
+ body:'<p>A call to action is a promise: click this, and a specific good thing happens. Conversion measurement is how you learn whether the promise was kept. Both fail the same way — by optimising the click instead of the outcome — and this guide covers the honest alternative that SXO is built on.</p>'
+ +'<div class="answer-box"><span class="a-label">The short answer</span><p>Write CTAs that state the outcome plainly ("Download the audit checklist"), place one primary CTA at natural decision points, remove every form field you cannot justify, and measure completed outcomes — qualified leads, sales, subscriptions — rather than raw clicks. A click is curiosity; a conversion is a kept promise.</p></div>'
+ +'<h2>CTA copy: specific beats clever</h2><p>The button text is a micro-contract. "Get the free checklist" tells the visitor what arrives; "Submit" tells them nothing; "Claim your destiny" tells them you cannot be trusted with specifics. Match the CTA to the page\'s intent and the reader\'s stage: a first-time reader of a guide is ready for a checklist or a related article, not a sales call. Offer the next step the content has <i>earned</i>.</p>'
+ +'<h2>Placement and friction</h2><ul><li><b>One primary CTA per page.</b> Competing primaries split attention and signal that you do not know what the page is for.</li><li><b>Repeat at decision points:</b> after the answer, after the proof, at the end — where a convinced reader looks for it. Not in a banner every 200 pixels.</li><li><b>Count your form fields like money.</b> Each field costs completions. Name and email earn their place; phone, company size and "how did you hear about us" usually do not — ask later, after value is delivered.</li><li><b>Show the cost honestly:</b> price, commitment and what happens next, before the click — surprises after conversion are refunds and unsubscribes in waiting.</li></ul>'
+ +'<h2>Measure outcomes, not applause</h2><table><tr><th>Metric</th><th>What it really tells you</th></tr><tr><td>CTA clicks</td><td>The promise was interesting — nothing about delivery</td></tr><tr><td>Form starts</td><td>Intent existed; friction may still kill it</td></tr><tr><td>Completions</td><td>The promise was kept at the asked price</td></tr><tr><td>Qualified outcomes</td><td>Leads that sales accepts; sales that are not refunded</td></tr><tr><td>Downstream value</td><td>Retention, repeat purchase, referrals — the number that funds everything</td></tr></table><p>Report at least one metric from the bottom two rows in every review. Teams that stare at click-through rates optimise headlines; teams that stare at qualified outcomes optimise businesses.</p>'
+ +'<div class="callout"><b class="t">The honesty dividend</b><p>Clear pricing, real guarantees and CTAs that describe reality convert slightly fewer clickers — and far more customers. They also generate the reviews, returns and referrals that feed your E-E-A-T and GEO presence. In a library about layers, this is the deepest one: every layer above SXO is built on whether strangers believe you.</p></div>'
+ +'<p>Start with one page: rewrite its CTA to state the outcome, delete two form fields, and add completion tracking that reaches a qualified outcome. Measure for a month against the old version. Honest almost always wins — and when it does not, you will have learned something true about your offer, which is worth more than the clicks.</p>'}
+];
+</script>
+
+<script>
+"use strict";
+/* ============ HELPERS ============ */
+function $(id){return document.getElementById(id);}
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;");}
+function byCat(cat){return ARTICLES.filter(function(a){return a.cat===cat;});}
+function findArticle(slug){for(var i=0;i<ARTICLES.length;i++){if(ARTICLES[i].slug===slug)return ARTICLES[i];}return null;}
+var CAT_ORDER=["seo","aeo","geo","aio","sxo"];
+
+function cardHTML(a){
+  return '<article class="card" data-open="'+a.slug+'" tabindex="0" role="button" aria-label="Read article: '+esc(a.title)+'">'
+  +'<img src="'+a.img+'" alt="'+esc(a.alt)+'" loading="lazy" />'
+  +'<div class="c-body"><div class="c-meta"><span class="c-cat">'+CATS[a.cat].name+'</span><span>Updated '+a.date+'</span></div>'
+  +'<h3>'+a.title+'</h3><p>'+a.excerpt+'</p>'
+  +'<div style="display:flex;justify-content:space-between;align-items:center"><span class="c-link">Read article ↗</span><span class="c-time">'+a.read+'</span></div>'
+  +'</div></article>';
+}
+function bindCards(scope){
+  var cards=scope.querySelectorAll("[data-open]");
+  for(var i=0;i<cards.length;i++){
+    (function(el){
+      el.addEventListener("click",function(){location.hash="#article/"+el.getAttribute("data-open");});
+      el.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();location.hash="#article/"+el.getAttribute("data-open");}});
+    })(cards[i]);
+  }
+}
+
+/* ============ RENDER: PILLARS ============ */
+(function(){
+  var html="";
+  CAT_ORDER.forEach(function(key){
+    var c=CATS[key];
+    html+='<div class="pillar"><div class="p-head"><div class="p-icon">'+ICONS[key]+'</div><div>'
+      +'<h3>'+c.name+'</h3><div class="p-full">'+c.full+'</div>'
+      +'<div class="p-goal"><div class="g-label">Goal</div><div class="g-text">'+c.goal+'</div></div></div></div>';
+    c.cols.forEach(function(col){
+      html+='<div class="p-col"><h4>'+col[0]+'</h4><ul>';
+      col[1].forEach(function(item){html+='<li>'+item+'</li>';});
+      html+='</ul></div>';
+    });
+    if(c.cols.length===1){html+='<div class="p-col"></div>';}
+    html+='<div class="p-metric"><div class="m-head">Success Metric</div><ul>';
+    c.metrics.forEach(function(m){html+='<li>'+ICONS.check+m+'</li>';});
+    html+='</ul><a href="#category/'+key+'" data-nav="cat-'+key+'">Read pillar guide <span>↗</span></a></div></div>';
+  });
+  $("pillarRows").innerHTML=html;
+})();
+
+/* ============ RENDER: HOME SECTIONS ============ */
+(function(){
+  var html="";
+  CAT_ORDER.forEach(function(key){
+    var c=CATS[key], list=byCat(key);
+    html+='<div class="section-head"><div><div class="kicker">'+c.name+' Curriculum</div><h2>'+c.name+' guides</h2></div>'
+      +'<a href="#category/'+key+'" data-nav="cat-'+key+'">View all '+list.length+' '+c.name+' guides →</a></div>'
+      +'<div class="cards">'+list.map(cardHTML).join("")+'</div>';
+  });
+  $("homeSections").innerHTML=html;
+  bindCards($("homeSections"));
+})();
+
+/* ============ RENDER: ALL GUIDES + FILTER ============ */
+var guideFilter="all";
+(function(){
+  var chips='<button class="chip on" data-filter="all">All 20 Guides</button>';
+  CAT_ORDER.forEach(function(key){chips+='<button class="chip" data-filter="'+key+'">'+CATS[key].name+' ('+byCat(key).length+')</button>';});
+  $("guideChips").innerHTML=chips;
+  var btns=$("guideChips").querySelectorAll("[data-filter]");
+  for(var i=0;i<btns.length;i++){
+    btns[i].addEventListener("click",function(){
+      guideFilter=this.getAttribute("data-filter");
+      var all=$("guideChips").querySelectorAll("[data-filter]");
+      for(var j=0;j<all.length;j++){all[j].classList.toggle("on",all[j]===this);}
+      renderAllGuides();
+    });
+  }
+})();
+function renderAllGuides(){
+  var list=guideFilter==="all"?ARTICLES:byCat(guideFilter);
+  $("allGuidesGrid").innerHTML=list.map(cardHTML).join("");
+  bindCards($("allGuidesGrid"));
+}
+renderAllGuides();
+
+/* ============ RENDER: FAQ ============ */
+var FAQS=[
+ ["What is the difference between SEO, AEO, GEO, AIO and SXO?","SEO gets a page crawled, indexed and ranked in classic search results. AEO shapes content so it becomes the direct answer in featured snippets and AI Overviews. GEO earns citations inside AI-generated answers from tools like ChatGPT and Gemini. AIO makes content machine-readable through clean structure, entities and structured data. SXO improves the experience after the click so visitors actually complete their task. The five layers build on each other in that order."],
+ ["Are the iWriteHub tools really free?","Yes. All four tools in the SEO Toolkit — the readiness checker, meta description checker, word counter and keyword density checker — run entirely in your browser. There is no account, no upload and no cost; the text you paste never leaves your device."],
+ ["How long are the guides on iWriteHub?","Every guide is a full long-form article, typically 1,000 to 1,600 words, with step-by-step workflows, comparison tables, worked examples and checklists. We deliberately publish complete articles instead of short summaries, and the homepage shows the full library as cards grouped by layer."],
+ ["Do I need coding skills to follow these guides?","No. The guides are written for site owners, bloggers and marketers. Technical topics like schema markup are explained in plain language with copy-ready examples, and anything that needs a developer is clearly flagged."],
+ ["What is the 40–58 word answer window?","It is the practical length range for a paragraph-style direct answer: long enough to state the answer and its key condition completely, short enough to fit a featured snippet box or a spoken voice answer. Our AEO guide on direct answers explains the four-part formula, and the toolkit checker counts your draft for you."],
+ ["Does FAQ schema guarantee rich results or AI citations?","No. Schema makes your content eligible and easier to parse; it never guarantees display or citation. Google also restricted FAQ rich results for most sites in 2023, so we teach FAQ structure as a clarity practice, not a rich-result trick."],
+ ["How often should I run a technical SEO audit?","Quarterly for most websites, monthly for large or fast-changing ones, and immediately after any redesign, migration or CMS change. Between audits, a weekly glance at index coverage and server errors catches urgent problems early."],
+ ["Can I quote or share iWriteHub content?","Brief quotations with a clear link back to the original guide are welcome. Please do not republish full articles as your own work — every guide here is original to iWriteHub and written for this library."]
+];
+(function(){
+  $("faqList").innerHTML=FAQS.map(function(f){
+    return '<details class="faq"><summary>'+f[0]+'</summary><p>'+f[1]+'</p></details>';
+  }).join("");
+})();
+
+/* ============ ROUTER ============ */
+var VIEWS=["home","guides","toolkit","category","article","about","faq","contact","privacy","terms"];
+function showView(name){
+  VIEWS.forEach(function(v){$("view-"+v).classList.toggle("active",v===name);});
+  var navMap={home:"home",guides:"guides",toolkit:"toolkit",about:"about",faq:"faq",contact:"contact",privacy:"privacy",terms:"terms"};
+  var links=document.querySelectorAll("nav.main a");
+  for(var i=0;i<links.length;i++){links[i].classList.toggle("active",links[i].getAttribute("data-nav")===navMap[name]);}
+  window.scrollTo(0,0);
+}
+function route(){
+  var h=(location.hash||"#home").replace(/^#/,"");
+  var parts=h.split("/");
+  if(parts[0]==="article"&&parts[1]){
+    var a=findArticle(parts[1]);
+    if(a){openArticle(a);showView("article");return;}
+  }
+  if(parts[0]==="category"&&parts[1]&&CATS[parts[1]]){openCategory(parts[1]);showView("category");return;}
+  if(VIEWS.indexOf(parts[0])>=0&&parts[0]!=="article"&&parts[0]!=="category"){showView(parts[0]);return;}
+  showView("home");
+}
+function openCategory(key){
+  var c=CATS[key], list=byCat(key);
+  $("catKicker").textContent=c.name+" Curriculum · "+c.full;
+  $("catTitle").textContent=c.name+" Guides";
+  $("catIntro").textContent=c.intro;
+  $("catGrid").innerHTML=list.map(cardHTML).join("");
+  bindCards($("catGrid"));
+  var links=document.querySelectorAll("nav.main a");
+  for(var i=0;i<links.length;i++){links[i].classList.toggle("active",links[i].getAttribute("data-nav")==="cat-"+key);}
+}
+function openArticle(a){
+  document.title=a.title+" | iWriteHub";
+  $("artCat").textContent=CATS[a.cat].name+" · "+CATS[a.cat].full;
+  $("artTitle").textContent=a.title;
+  $("artMeta").innerHTML="<span>Updated "+a.date+"</span><span>·</span><span>"+a.read+"</span><span>·</span><span>By iWriteHub Editorial</span>";
+  var img=$("artImg"); img.src=a.img; img.alt=a.alt;
+  $("artBody").innerHTML=a.body;
+  var rel=byCat(a.cat).filter(function(x){return x.slug!==a.slug;});
+  var others=ARTICLES.filter(function(x){return x.cat!==a.cat;});
+  rel=rel.concat(others.slice(0,Math.max(0,3-rel.length))).slice(0,3);
+  $("relatedGrid").innerHTML=rel.map(cardHTML).join("");
+  bindCards($("relatedGrid"));
+  bindCards($("artBody"));
+}
+window.addEventListener("hashchange",route);
+
+/* In-article links use hash hrefs already; restore title when leaving article */
+window.addEventListener("hashchange",function(){
+  if((location.hash||"").indexOf("#article/")!==0){
+    document.title="iWriteHub — Layers of SEO: SEO, AEO, GEO, AIO & SXO Guides and Toolkit";
+  }
+  $("mainNav").classList.remove("open");
+  $("menuBtn").setAttribute("aria-expanded","false");
+});
+$("menuBtn").addEventListener("click",function(){
+  var nav=$("mainNav"), open=nav.classList.toggle("open");
+  this.setAttribute("aria-expanded",open?"true":"false");
+});
+
+/* ============ TOOLS ============ */
+var measureCtx=document.createElement("canvas").getContext("2d");
+function textWidth(text,font){measureCtx.font=font;return measureCtx.measureText(text).width;}
+function countWords(t){var m=t.trim().match(/\S+/g);return m?m.length:0;}
+function setPill(el,text,kind){el.textContent=text;el.className="pill"+(kind?" "+kind:"");}
+function runChecker(tI,aI,pxEl,pxPill,wEl,wPill,sEl,sPill){
+  var title=tI.value||"", ans=aI.value||"";
+  var px=Math.round(textWidth(title,"700 20px Arial, sans-serif"));
+  pxEl.textContent=px+" px ("+title.length+" chars)";
+  if(px<=580&&title.length>=35){setPill(pxPill,"Optimal (≤ 580px)");}
+  else if(px<=580){setPill(pxPill,"Fits, but short — consider 35+ chars","warn");}
+  else{setPill(pxPill,"Too wide — likely truncated","bad");}
+  var w=countWords(ans);
+  wEl.textContent=w+" words";
+  var inWindow=w>=40&&w<=58;
+  if(inWindow){setPill(wPill,"Ideal AEO Snippet Window (40–58w)");}
+  else if(w>0&&w<40){setPill(wPill,"Short — add the key condition","warn");}
+  else if(w>58){setPill(wPill,"Long — trim to the direct answer","warn");}
+  else{setPill(wPill,"Paste an answer paragraph","bad");}
+  var score=100;
+  if(px>580){score-=Math.min(35,Math.round((px-580)/12));}
+  if(title.length>0&&title.length<35){score-=10;}
+  if(!inWindow){if(w===0){score-=50;}else{score-=Math.min(40,Math.abs(w-49)*2);}}
+  if(title.length===0){score-=30;}
+  score=Math.max(0,Math.min(100,score));
+  sEl.textContent=score+" / 100";
+  if(score>=85){setPill(sPill,"Direct-Answer Ready");}
+  else if(score>=60){setPill(sPill,"Close — small fixes needed","warn");}
+  else{setPill(sPill,"Needs work before publishing","bad");}
+}
+function wireChecker(p){
+  var tI=$(p+"Title"),aI=$(p+"Answer");
+  if(!tI)return;
+  var run=function(){runChecker(tI,aI,$(p+"Px"),$(p+"PxPill"),$(p+"Words"),$(p+"WordsPill"),$(p+"Score"),$(p+"ScorePill"));};
+  tI.addEventListener("input",run);aI.addEventListener("input",run);run();
+}
+wireChecker("q");wireChecker("t");
+
+/* Meta description checker */
+(function(){
+  var ta=$("mDesc");if(!ta)return;
+  function run(){
+    var v=ta.value||"", px=Math.round(textWidth(v,"400 16px Arial, sans-serif"));
+    $("mChars").textContent=v.length+" chars";
+    if(v.length>=150&&v.length<=160){setPill($("mCharsPill"),"Ideal range (150–160)");}
+    else if(v.length>=120&&v.length<150){setPill($("mCharsPill"),"A little short — acceptable","warn");}
+    else if(v.length>160){setPill($("mCharsPill"),"Long — the end may be cut","warn");}
+    else{setPill($("mCharsPill"),"Too short — use the space","bad");}
+    $("mPx").textContent="≈ "+px+" px";
+    if(px<=920){setPill($("mPxPill"),"Within desktop display (≈920px)");}
+    else{setPill($("mPxPill"),"May truncate on desktop","warn");}
+  }
+  ta.addEventListener("input",run);run();
+})();
+
+/* Word counter */
+(function(){
+  var ta=$("wText");if(!ta)return;
+  function run(){
+    var v=ta.value||"", w=countWords(v);
+    var sentences=(v.match(/[.!?]+(\s|$)/g)||[]).length;
+    $("wWords").textContent=w;
+    $("wChars").textContent=v.length+" chars / "+sentences+" sentences";
+    $("wTime").textContent=Math.max(0,Math.round(w/200))+" min read";
+  }
+  ta.addEventListener("input",run);run();
+})();
+
+/* Keyword density */
+(function(){
+  var kw=$("kWord"),tx=$("kText");if(!kw)return;
+  function run(){
+    var word=(kw.value||"").trim().toLowerCase(), text=(tx.value||"").toLowerCase();
+    var total=countWords(tx.value||"");
+    if(!word||total===0){$("kCount").textContent="0";$("kDensity").textContent="0%";setPill($("kPill"),word?"Paste some text":"Enter a keyword","warn");return;}
+    var escaped=word.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+    var matches=text.match(new RegExp("\\b"+escaped+"\\b","g"));
+    var count=matches?matches.length:0;
+    var phraseWords=countWords(word);
+    var density=total>0?(count*phraseWords/total*100):0;
+    $("kCount").textContent=count;
+    $("kDensity").textContent=density.toFixed(2)+"%";
+    if(density===0){setPill($("kPill"),"Not found — consider adding it naturally","warn");}
+    else if(density<=2.5){setPill($("kPill"),"Natural range for most topics");}
+    else{setPill($("kPill"),"High — check for keyword stuffing","bad");}
+  }
+  kw.addEventListener("input",run);tx.addEventListener("input",run);run();
+})();
+
+/* ============ COOKIE NOTICE (in-memory only) ============ */
+(function(){
+  var bar=$("cookieBar");
+  setTimeout(function(){bar.classList.add("show");},900);
+  function hide(){bar.classList.remove("show");toast("Preference saved for this session");}
+  $("cookieAccept").addEventListener("click",hide);
+  $("cookieEssential").addEventListener("click",hide);
+})();
+var toastTimer=null;
+function toast(msg){
+  var t=$("toast");t.textContent=msg;t.classList.add("show");
+  clearTimeout(toastTimer);toastTimer=setTimeout(function(){t.classList.remove("show");},2600);
+}
+
+/* ============ CONTACT FORM (mailto) ============ */
+$("contactForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  var name=$("cName").value.trim(), email=$("cEmail").value.trim(),
+      subj=$("cSubject").value.trim(), msg=$("cMsg").value.trim();
+  var body=encodeURIComponent(msg+"\n\n— "+name+" ("+email+")");
+  location.href="mailto:contact@iwritehub.github.io?subject="+encodeURIComponent(subj)+"&body="+body;
+  toast("Opening your mail app…");
+});
+
+route();
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iwritehub.github.io/sitemap.xml
